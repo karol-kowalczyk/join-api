@@ -1,9 +1,44 @@
+body {
+        font-family: 'Inter', sans-serif !important;
+        margin: 0;
+}
 
 
+#main-header {
+        display: flex;
+        justify-content: space-between;
+}
 
-.inter-400 {
-        font-family: 'Inter', sans-serif;
+#sign-up-section {
+        display: flex;
+        gap: 35px;
+        align-items: baseline;
+        padding: 64px 96px 0 0;
+}
+
+.paragraphs {
+        color: #000000;
         font-weight: 400;
         size: 20px;
         margin: 0;
+}
+
+.sign-up-btn {
+        background-color: #2A3647;
+        color: #ffffff;
+        font-weight: 700;
+        height: 49px;
+        width: 91px;
+        size: 16px;
+        border-radius: 8px;
+        border: none;
+}
+
+.sign-up-btn:hover {
+        background-color: #29ABE2;
+        cursor: pointer;
+}
+
+#join-logo {
+        padding: 64px 0 64px 64px;
 }
