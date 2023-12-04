@@ -1,5 +1,7 @@
 body {
         font-family: 'Inter', sans-serif !important;
+        background-color: #F6F7F8;
+        color: #000000;
         margin: 0;
 }
 
@@ -9,11 +11,84 @@ body {
         justify-content: space-between;
 }
 
+#join-logo {
+        padding: 64px 0 64px 64px;
+}
+
+
 #sign-up-section {
         display: flex;
         gap: 35px;
         align-items: baseline;
         padding: 64px 96px 0 0;
+}
+
+#mid-section {
+        display: flex;
+        justify-content: center;
+}
+
+#login-section {
+        background-color: #ffffff;
+        width: 652px;
+        height: 493px;
+        border-radius: 30px;
+        padding-top: 44px;
+        box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+
+}
+
+#login-paragraph {
+        height: 89px;
+        font-size: 61px;
+        font-weight: 700;
+        margin: 0;
+}
+
+#input-fields {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+}
+
+#login-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+#blue-line {
+        border: 1.5px solid #29ABE2;
+        width: 150px;
+        margin-bottom: 28px;
+}
+
+#email-field {
+        background-image: url(./assets/img/login-site/mail.svg);
+        background-repeat: no-repeat;
+        text-indent: 20px;
+}
+
+#password-field {
+        background-image: url(./assets/img/login-site/lock.svg);
+        background-repeat: no-repeat;
+        text-indent: 20px;
+}
+
+.login-fields {
+        width: 422px;
+        height: 48px;
+        border: 1px solid #D1D1D1;
+        border-radius: 10px;
+}
+
+.login-fields::placeholder {
+        color: #D1D1D1;
+}
+
+.login-fields:active {
+        background-image: none;
 }
 
 .paragraphs {
@@ -37,8 +112,4 @@ body {
 .sign-up-btn:hover {
         background-color: #29ABE2;
         cursor: pointer;
-}
-
-#join-logo {
-        padding: 64px 0 64px 64px;
 }
