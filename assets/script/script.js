@@ -81,5 +81,5 @@ passwordField.addEventListener('input', removePasswordImg);
  * 
  * This function removes the background image from the input field when the user enters text
  */
- 
+
 passwordField.addEventListener('blur', restorePasswordImg);

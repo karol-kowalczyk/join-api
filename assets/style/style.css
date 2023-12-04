@@ -5,6 +5,17 @@ body {
         margin: 0;
 }
 
+input[type=email]:focus {
+        outline: 1px solid #29ABE2;
+}
+
+input[type=password]:focus {
+        outline: 1px solid #29ABE2;
+}
+
+input[type=checkbox]:hover {
+        cursor: pointer;
+}
 
 #main-header {
         display: flex;
@@ -31,7 +42,7 @@ body {
 #login-section {
         background-color: #ffffff;
         width: 652px;
-        height: 493px;
+        height: 463px;
         border-radius: 30px;
         padding-top: 44px;
         box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
@@ -79,20 +90,48 @@ body {
         background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
 }
 
+#register-btns {
+        height: 48px;
+        gap: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#remember-checkbox {
+        display: flex;
+        gap: 4px;
+        margin-top: 24px;
+        margin-bottom: 36px;
+}
+
 #email-field:fokus {
         background-image: none;
 }
 
-input[type=email]:focus {
-        outline: 1px solid #29ABE2;
+#guest-login-btn {
+        border-radius: 8px;
+        height: 48px;
+        width: 177px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: (41, 54, 71);
+        font-weight: 700;
+        border: 1px solid rgb(41, 54, 71);
 }
 
-input[type=password]:focus {
-        outline: 1px solid #29ABE2;
+#guest-login-btn:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(41, 171, 226);
+        border: 1px solid rgb(41, 171, 226);
 }
 
-.d-none {
-        display: none;
+.cursor-pointer {
+        cursor: pointer;
 }
 
 .login-fields {
@@ -104,6 +143,8 @@ input[type=password]:focus {
 
 .login-fields::placeholder {
         color: #D1D1D1;
+        font-weight: 400;
+        font-size: 16px;
 }
 
 .paragraphs {
@@ -116,15 +157,31 @@ input[type=password]:focus {
 .sign-up-btn {
         background-color: #2A3647;
         color: #ffffff;
-        font-weight: 700;
         height: 49px;
         width: 91px;
-        size: 16px;
+        font-weight: 700;
+        font-size: 16px;
         border-radius: 8px;
         border: none;
 }
 
 .sign-up-btn:hover {
+        background-color: #29ABE2;
+        cursor: pointer;
+}
+
+.log-in-btn {
+        background-color: #2A3647;
+        color: #ffffff;
+        height: 48px;
+        width: 110px;
+        font-weight: 700;
+        font-size: 21px;
+        border-radius: 8px;
+        border: none;
+}
+
+.log-in-btn:hover {
         background-color: #29ABE2;
         cursor: pointer;
 }
