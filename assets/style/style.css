@@ -83,7 +83,7 @@ body {
         background-image: none;
 }
 
-input[type=text]:focus {
+input[type=email]:focus {
         outline: 1px solid #29ABE2;
 }
 
