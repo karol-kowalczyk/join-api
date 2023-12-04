@@ -65,15 +65,34 @@ body {
 }
 
 #email-field {
-        background-image: url(./assets/img/login-site/mail.svg);
+        background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
         background-repeat: no-repeat;
         text-indent: 20px;
+        background-repeat: no-repeat;
+        background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
 }
 
 #password-field {
-        background-image: url(./assets/img/login-site/lock.svg);
+        background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
         background-repeat: no-repeat;
         text-indent: 20px;
+        background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+#email-field:fokus {
+        background-image: none;
+}
+
+input[type=text]:focus {
+        outline: 1px solid #29ABE2;
+}
+
+input[type=password]:focus {
+        outline: 1px solid #29ABE2;
+}
+
+.d-none {
+        display: none;
 }
 
 .login-fields {
@@ -85,10 +104,6 @@ body {
 
 .login-fields::placeholder {
         color: #D1D1D1;
-}
-
-.login-fields:active {
-        background-image: none;
 }
 
 .paragraphs {
