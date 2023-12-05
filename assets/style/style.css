@@ -8,7 +8,7 @@ body {
 
 input[type=email]:focus {
         outline: 1px solid #29ABE2;
-}
+} 
 
 input[type=password]:focus {
         outline: 1px solid #29ABE2;
@@ -21,12 +21,8 @@ input[type=checkbox]:hover {
 #main-header {
         display: flex;
         justify-content: space-between;
+        min-height: 20vh;
 }
-
-#join-logo {
-        padding: 64px 0 8px 64px;
-}
-
 
 #sign-up-section {
         display: flex;
@@ -38,6 +34,7 @@ input[type=checkbox]:hover {
 #mid-section {
         display: flex;
         justify-content: center;
+        height: 70vh;
 }
 
 #login-section {
@@ -47,7 +44,6 @@ input[type=checkbox]:hover {
         border-radius: 30px;
         padding-top: 44px;
         box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
-
 }
 
 #login-paragraph {
@@ -134,9 +130,9 @@ input[type=checkbox]:hover {
 #compliance-links-div {
         display: flex;
         justify-content: center;
+        width: 100%;
         align-items: flex-end;
         gap: 16px;
-        height: 16vh;
 }
 
 .cursor-pointer {
