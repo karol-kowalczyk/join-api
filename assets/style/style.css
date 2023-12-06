@@ -20,7 +20,7 @@ input[type=checkbox]:hover {
 
 #main-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         min-height: 20vh;
 }
 
