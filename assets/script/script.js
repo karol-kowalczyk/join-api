@@ -84,7 +84,7 @@ passwordField.addEventListener('input', removePasswordImg);
 
 passwordField.addEventListener('blur', restorePasswordImg);
 
-
+joinLogo = document.getElementById('big-logo');
 
 setTimeout (function init() {
         let header = document.getElementById('main-header');
@@ -99,7 +99,13 @@ setTimeout (function init() {
         midSection.classList.add('opacity-one');
         complianceLinks.classList.add('opacity-one');
 
-        joinLogo = document.getElementById('big-logo');
+        
         joinLogo.classList.add('transition');
+
+        removeJoinClass();
 }, 1000)
 
+function removeJoinClass() {
+        joinLogo.classList.remove('big-logo');
+        joinLogo.classList.add('big-logo-loaded');
+}
