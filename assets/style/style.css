@@ -355,6 +355,14 @@ input[type=checkbox]:hover {
                 border-radius: 8px;
                 border: none;
         }
+
+        #big-logo {
+                transform: scale(0.3);
+                position: fixed;
+                top: -58px;
+                left: -34px;
+                height: 30%;
+        }
 }
 
 @media (max-width: 415px) {

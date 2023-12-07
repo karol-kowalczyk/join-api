@@ -1,0 +1,225 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #F6F7F8;
+    color: #000000;
+    margin: 0;
+    overflow: hidden;
+}
+
+input[type=text]:focus {
+    outline: 1px solid #29ABE2;
+}
+
+input[type=email]:focus {
+    outline: 1px solid #29ABE2;
+}
+
+input[type=password]:focus {
+    outline: 1px solid #29ABE2;
+}
+
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+#main-header {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 15vh;
+}
+
+#mid-section {
+    display: flex;
+    justify-content: center;
+    height: 78vh;
+}
+
+#sign-up-section {
+    background-color: #ffffff;
+    width: 580px;
+    height: 540px;
+    border-radius: 30px;
+    padding-top: 44px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+}
+
+#sign-up-arrow-div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+#login-paragraph {
+    height: 89px;
+    font-size: 61px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+#login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left-arrow {}
+
+#blue-line {
+    border: 1.5px solid #29ABE2;
+    width: 150px;
+    margin-bottom: 28px;
+}
+
+#name-field {
+    background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-repeat: no-repeat;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+#email-field {
+    background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-repeat: no-repeat;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+#password-field {
+    background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+
+#privacy-policy-checkbox {
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+#email-field:fokus {
+    background-image: none;
+}
+
+#compliance-links-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+#sign-up-div {
+    display: flex;
+    justify-content: center;
+}
+
+.big-logo-loaded {
+    position: absolute;
+    top: 40px;
+    left: 68px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.login-fields {
+    width: 422px;
+    height: 48px;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+}
+
+.login-fields::placeholder {
+    color: #D1D1D1;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.paragraphs {
+    color: #000000;
+    font-weight: 400;
+    size: 20px;
+    margin: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.sign-up-btn {
+    background-color: #2A3647;
+    color: #ffffff;
+    height: 49px;
+    width: 126px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.sign-up-btn:hover {
+    background-color: #29ABE2;
+    cursor: pointer;
+}
+
+.log-in-btn {
+    background-color: #2A3647;
+    color: #ffffff;
+    height: 48px;
+    width: 110px;
+    font-weight: 700;
+    font-size: 21px;
+    border-radius: 8px;
+    border: none;
+}
+
+.log-in-btn:hover {
+    background-color: #29ABE2;
+    cursor: pointer;
+}
+
+.compliance-links {
+    text-decoration: none;
+    color: #a8a8a8;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.privacy-policy {
+    text-decoration: none;
+    color: #29ABE2;
+    font-weight: 400;
+    font-family: 16px;
+}
+
+.transition {
+    transform: translate(-30%, 20%) scale(1);
+    transition: all 0.8s ease-out 0s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+@media (max-width: 1100px) {
+    .big-logo-loaded {
+        transform: scale(0.8);
+        position: fixed;
+        top: 16px;
+        left: 44px;
+        transition: all 0.8s ease-out 0s;
+    }
+}

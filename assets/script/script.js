@@ -111,5 +111,5 @@ function removeJoinClass() {
 }
 
 function loadSignUp() {
-        window.location = '/join-project-management-tool/assets/html/signup.html';
+        window.location = '/join-project-management-tool/assets/html/sign_up.html';
 }
