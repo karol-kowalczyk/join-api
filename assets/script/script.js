@@ -83,3 +83,23 @@ passwordField.addEventListener('input', removePasswordImg);
  */
 
 passwordField.addEventListener('blur', restorePasswordImg);
+
+
+
+setTimeout (function init() {
+        let header = document.getElementById('main-header');
+        let midSection = document.getElementById('mid-section');
+        let complianceLinks = document.getElementById('compliance-links-div');
+
+        header.classList.remove('opacity-zero')
+        midSection.classList.remove('opacity-zero')
+        complianceLinks.classList.remove('opacity-zero')
+
+        header.classList.add('opacity-one');
+        midSection.classList.add('opacity-one');
+        complianceLinks.classList.add('opacity-one');
+
+        joinLogo = document.getElementById('big-logo');
+        joinLogo.classList.add('transition');
+}, 1000)
+
