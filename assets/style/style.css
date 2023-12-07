@@ -239,5 +239,57 @@ input[type=checkbox]:hover {
 }
 
 @media (max-width: 700px) {
+        #login-section {
+                width: 426px;
+                height: 500px;
+        }
+
+        #email-field {
+                width: 80%;
+                height: 36px;
+        }
+
+        #password-field {
+                width: 80%;
+                height: 36px;
+        }
+
+        #register-btns {
+                display: flex;
+                height: 120px;
+                flex-direction: column;
+                gap: 18px;
+        }
+
+        .log-in-btn {
+                height: 48px;
+                width: 177px;
+                font-size: 21px;
+        }
+}
+
+@media (max-width: 480px) {
+        #sign-up-section {
+                display: flex;
+                gap: 16px;
+                align-items: baseline;
+                padding: 32px 96px 0 0;
+                flex-direction: column;
+        }
+
+        #login-section {
+                width: 426px;
+                height: 500px;
+        }
+
+        #email-field {
+                width: 80%;
+                height: 36px;
+        }
+
+        #password-field {
+                width: 80%;
+                height: 36px;
+        }
 
 }

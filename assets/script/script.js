@@ -86,7 +86,7 @@ passwordField.addEventListener('blur', restorePasswordImg);
 
 joinLogo = document.getElementById('big-logo');
 
-setTimeout (function init() {
+setTimeout(function init() {
         let header = document.getElementById('main-header');
         let midSection = document.getElementById('mid-section');
         let complianceLinks = document.getElementById('compliance-links-div');
@@ -99,7 +99,7 @@ setTimeout (function init() {
         midSection.classList.add('opacity-one');
         complianceLinks.classList.add('opacity-one');
 
-        
+
         joinLogo.classList.add('transition');
 
         removeJoinClass();
