@@ -109,3 +109,7 @@ function removeJoinClass() {
         joinLogo.classList.remove('big-logo');
         joinLogo.classList.add('big-logo-loaded');
 }
+
+function loadSignUp() {
+        window.location = '/join-project-management-tool/assets/html/signup.html';
+}
