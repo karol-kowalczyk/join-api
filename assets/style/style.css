@@ -46,7 +46,7 @@ input[type=checkbox]:hover {
         border-radius: 30px;
         padding-top: 44px;
         box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
-        margin-bottom: 6%;
+        margin-bottom: 3%;
 }
 
 #login-paragraph {

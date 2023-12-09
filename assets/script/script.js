@@ -119,3 +119,7 @@ function removeJoinClass() {
 function loadSignUp() {
         window.location = '/join-project-management-tool/sign_up.html';
 }
+
+function loadGuestLogin() {
+        window.location = '/join-project-management-tool/board.html';
+}
