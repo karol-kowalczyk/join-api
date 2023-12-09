@@ -37,7 +37,6 @@ input[type=checkbox]:hover {
 #mid-section {
         display: flex;
         justify-content: center;
-        height: 70svh;
 }
 
 #login-section {
@@ -47,6 +46,7 @@ input[type=checkbox]:hover {
         border-radius: 30px;
         padding-top: 44px;
         box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+        margin-bottom: 6%;
 }
 
 #login-paragraph {
