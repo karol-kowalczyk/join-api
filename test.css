@@ -1,3 +1,241 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #F6F7F8;
+    color: #000000;
+    margin: 0;
+}
+
+input[type=email]:focus {
+    outline: 1px solid #29ABE2;
+}
+
+input[type=password]:focus {
+    outline: 1px solid #29ABE2;
+}
+
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+#content {
+    height: 100svh;
+}
+
+#main-header {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 20svh;
+}
+
+#sign-up-section {
+    display: flex;
+    gap: 35px;
+    align-items: baseline;
+    padding: 64px 96px 0 0;
+}
+
+#mid-section {
+    display: flex;
+    justify-content: center;
+    height: 70svh;
+}
+
+#login-section {
+    background-color: #ffffff;
+    width: 652px;
+    height: 463px;
+    border-radius: 30px;
+    padding-top: 44px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+}
+
+#login-paragraph {
+    height: 89px;
+    font-size: 61px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+#login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blue-line {
+    border: 1.5px solid #29ABE2;
+    width: 150px;
+    margin-bottom: 28px;
+}
+
+#email-field {
+    background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-repeat: no-repeat;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+#password-field {
+    background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+#register-btns {
+    height: 48px;
+    gap: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#remember-checkbox {
+    display: flex;
+    gap: 4px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+#email-field:fokus {
+    background-image: none;
+}
+
+#guest-login-btn {
+    border-radius: 8px;
+    height: 48px;
+    width: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: (41, 54, 71);
+    font-weight: 700;
+    border: 1px solid rgb(41, 54, 71);
+}
+
+#guest-login-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(41, 171, 226);
+    border: 1px solid rgb(41, 171, 226);
+}
+
+#compliance-links-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.opacity-one {
+    opacity: 1;
+    transition: opacity 2s ease-in 0s;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.big-logo {
+    position: absolute;
+    left: 43%;
+    top: 30%;
+}
+
+.big-logo-loaded {
+    position: absolute;
+    top: 260px;
+    left: 680px;
+}
+
+.transition {
+    transform: translate(-260%, -90%) scale(0.5);
+    transition: all 1s ease-out 0s;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.login-fields {
+    width: 422px;
+    height: 48px;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+}
+
+.login-fields::placeholder {
+    color: #D1D1D1;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.paragraphs {
+    color: #000000;
+    font-weight: 400;
+    size: 20px;
+    margin: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.sign-up-btn {
+    background-color: #2A3647;
+    color: #ffffff;
+    height: 49px;
+    width: 91px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.sign-up-btn:hover {
+    background-color: #29ABE2;
+    cursor: pointer;
+}
+
+.log-in-btn {
+    background-color: #2A3647;
+    color: #ffffff;
+    height: 48px;
+    width: 110px;
+    font-weight: 700;
+    font-size: 21px;
+    border-radius: 8px;
+    border: none;
+}
+
+.log-in-btn:hover {
+    background-color: #29ABE2;
+    cursor: pointer;
+}
+
+.compliance-links {
+    text-decoration: none;
+    color: #a8a8a8;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
 @media (max-width: 1100px) {
     #big-logo {
         transform: scale(0.3);
@@ -277,7 +515,7 @@
     }
 
     #main-header {
-        height: 85px;
+        height: 105px;
     }
 
     #responsive-sign-up {
@@ -290,3 +528,19 @@
     }
 }
 
+@media (max-width: 414px) and (max-height: 896px) {
+    #email-field {
+        background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        background-repeat: no-repeat;
+        background-position: clamp(11.25rem, -0.179rem + 57.14vw, 200px);
+    }
+    
+    #password-field {
+        background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        background-position: clamp(11.25rem, -0.179rem + 57.14vw, 200px);
+    }
+}
