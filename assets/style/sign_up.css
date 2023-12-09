@@ -25,13 +25,13 @@ input[type=checkbox]:hover {
 #main-header {
     display: flex;
     justify-content: flex-end;
-    min-height: 15vh;
+    min-height: 15svh;
 }
 
 #mid-section {
     display: flex;
     justify-content: center;
-    height: 78vh;
+    height: 78svh;
 }
 
 #sign-up-section {

@@ -3,7 +3,6 @@ body {
         background-color: #F6F7F8;
         color: #000000;
         margin: 0;
-        overflow: hidden;
 }
 
 input[type=email]:focus {
@@ -25,7 +24,7 @@ input[type=checkbox]:hover {
 #main-header {
         display: flex;
         justify-content: flex-end;
-        min-height: 20vh;
+        min-height: 20svh;
 }
 
 #sign-up-section {
@@ -38,7 +37,7 @@ input[type=checkbox]:hover {
 #mid-section {
         display: flex;
         justify-content: center;
-        height: 70vh;
+        height: 70svh;
 }
 
 #login-section {
@@ -235,176 +234,4 @@ input[type=checkbox]:hover {
 
 ::-webkit-scrollbar {
         width: 10px;
-}
-
-@media (max-width: 1100px) {
-        #big-logo {
-                transform: scale(0.3);
-                position: fixed;
-                top: -88px;
-                left: -64px;
-        }
-}
-
-@media (max-width: 700px) {
-        #login-section {
-                width: 426px;
-                height: 500px;
-        }
-
-        #email-field {
-                width: 80%;
-                height: 36px;
-        }
-
-        #password-field {
-                width: 80%;
-                height: 36px;
-        }
-
-        #register-btns {
-                display: flex;
-                height: 120px;
-                flex-direction: column;
-                gap: 18px;
-        }
-
-        #email-field {
-                background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
-                background-repeat: no-repeat;
-                text-indent: 20px;
-                background-repeat: no-repeat;
-                background-position: clamp(11.25rem, 0rem + 57.14vw, 300px);
-        }
-
-        #password-field {
-                background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
-                background-repeat: no-repeat;
-                text-indent: 20px;
-                background-position: clamp(11.25rem, -0.179rem + 57.14vw, 300px);
-        }
-
-        #mid-section {
-                height: 74svh;
-        }
-
-        .log-in-btn {
-                height: 48px;
-                width: 177px;
-                font-size: 21px;
-        }
-}
-
-@media (max-width: 480px) {
-        #sign-up-section {
-                display: none;
-        }
-
-        #login-section {
-                width: 396px;
-                height: 500px;
-                padding-top: 8px;
-        }
-
-        #email-field {
-                width: 80%;
-                height: 36px;
-        }
-
-        #password-field {
-                width: 80%;
-                height: 36px;
-        }
-
-        /* #main-header {
-                display: flex;
-                min-height: 22vh;
-        } */
-
-        #mid-section {
-                display: flex;
-                justify-content: center;
-                height: 55vh;
-        }
-
-        #responsive-sign-up {
-                min-height: 16vh;
-                display: flex;
-                width: 100%;
-                align-items: center;
-                justify-content: center;
-                gap: 32px;
-
-        }
-
-        #login-paragraph {
-                height: 89px;
-                font-size: 47px;
-                font-weight: 700;
-                margin: 0;
-                padding-top: 16px;
-        }
-
-        #compliance-links-div {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                align-items: flex-end;
-                gap: 32px;
-        }
-
-        .sign-up-btn {
-                background-color: #2A3647;
-                color: #ffffff;
-                height: 49px;
-                width: 104x;
-                font-weight: 700;
-                font-size: 16px;
-                border-radius: 8px;
-                border: none;
-        }
-
-        #big-logo {
-                transform: scale(0.3);
-                position: fixed;
-                top: -58px;
-                left: -34px;
-                height: 30%;
-        }
-}
-
-@media (max-width: 415px) {
-        #login-section {
-                width: 300px;
-                height: 500px;
-                padding-top: 8px;
-        }
-}
-
-@media (max-width: 480px) and (max-height: 850px) {
-
-        #main-header {
-                display: flex;
-                /* justify-content: flex-end; */
-                /* min-height: 20vh; */
-                height: 120px;
-                min-height: 0;
-        }
-
-        #responsive-sign-up {
-                min-height: auto;
-                margin-bottom: 64px;
-        }
-
-        #mid-section {
-                height: auto;
-                margin-bottom: 32px;
-        }
-}
-
-@media (max-height: 800px) {
-        #responsive-sign-up {
-                min-height: auto;
-                margin-bottom: 32px;
-        }
 }
