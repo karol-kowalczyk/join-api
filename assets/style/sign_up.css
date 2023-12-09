@@ -69,7 +69,9 @@ input[type=checkbox]:hover {
     align-items: center;
 }
 
-#left-arrow {}
+#left-arrow {
+    cursor: pointer;
+}
 
 #blue-line {
     border: 1.5px solid #29ABE2;
@@ -127,7 +129,7 @@ input[type=checkbox]:hover {
 
 .big-logo-loaded {
     position: absolute;
-    top: 40px;
+    top: 32px;
     left: 68px;
 }
 
