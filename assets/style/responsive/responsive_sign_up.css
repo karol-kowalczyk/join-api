@@ -10,6 +10,11 @@
                 left: 44px;
                 transition: all 0.8s ease-out 0s;
         }
+
+        #privacy-policy-checkbox {
+                margin-bottom: 0;
+        }
+
 }
 
 @media (max-width: 600px) {

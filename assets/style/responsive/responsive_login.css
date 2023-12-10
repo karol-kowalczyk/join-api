@@ -28,6 +28,8 @@
         }
     }
 
+
+
 }
 
 @media (max-width: 1050px) {
@@ -224,8 +226,6 @@
         margin-bottom: 32px;
     }
 }
-
-/* for all end mobile devices like tablet etc */
 
 @media (width: 1024px) and (height: 600px) {
     body {
