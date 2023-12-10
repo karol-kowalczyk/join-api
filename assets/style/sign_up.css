@@ -31,15 +31,16 @@ input[type=checkbox]:hover {
 #mid-section {
     display: flex;
     justify-content: center;
-    height: 78svh;
+    height: 74svh;
 }
 
 #sign-up-section {
     background-color: #ffffff;
     width: 580px;
-    height: 540px;
+    height: 520px;
     border-radius: 30px;
-    padding-top: 44px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
 }
 
@@ -83,7 +84,6 @@ input[type=checkbox]:hover {
     background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
     background-repeat: no-repeat;
     text-indent: 20px;
-    background-repeat: no-repeat;
     background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
 }
 
@@ -91,7 +91,6 @@ input[type=checkbox]:hover {
     background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
     background-repeat: no-repeat;
     text-indent: 20px;
-    background-repeat: no-repeat;
     background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
 }
 
@@ -214,14 +213,4 @@ input[type=checkbox]:hover {
 
 ::-webkit-scrollbar {
     width: 10px;
-}
-
-@media (max-width: 1100px) {
-    .big-logo-loaded {
-        transform: scale(0.8);
-        position: fixed;
-        top: 16px;
-        left: 44px;
-        transition: all 0.8s ease-out 0s;
-    }
 }
