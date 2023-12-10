@@ -85,6 +85,7 @@ input[type=checkbox]:hover {
     background-repeat: no-repeat;
     text-indent: 20px;
     background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+    cursor: pointer;
 }
 
 #email-field {
@@ -92,6 +93,7 @@ input[type=checkbox]:hover {
     background-repeat: no-repeat;
     text-indent: 20px;
     background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+    cursor: pointer;
 }
 
 #password-field {
@@ -99,6 +101,15 @@ input[type=checkbox]:hover {
     background-repeat: no-repeat;
     text-indent: 20px;
     background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+    cursor: pointer;
+}
+
+#password-field-confirm {
+    background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+    cursor: pointer;
 }
 
 

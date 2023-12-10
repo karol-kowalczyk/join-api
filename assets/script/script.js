@@ -29,14 +29,14 @@ function restoreEmailImg() {
 
 /**
 *
-* EventListener activates the function removeEmailImg if the user inputs something in our input field 'input
+* EventListener activates the function removeEmailImg() if the user inputs something in our input field 'input'
 */
 
 emailField.addEventListener('input', removeEmailImg);
 
 /**
  *
- * The event listener activates the function restoreEmailImg when the field is no longer clicked and loses focus, or in other words, when it experiences a 'blur'
+ * The event listener activates the function restoreEmailImg() when the field is no longer clicked and loses focus, or in other words, when it experiences a 'blur'
  */
 
 emailField.addEventListener('blur', restoreEmailImg);
