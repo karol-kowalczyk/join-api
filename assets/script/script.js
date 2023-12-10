@@ -3,7 +3,7 @@
  * This global variable detects the input field with the id 'email-field'
  */
 
-emailField = document.getElementById('email-field');
+emailField = document.getElementById('email');
 
 /**
  * 
@@ -18,7 +18,7 @@ function removeEmailImg() {
 
 /**
  * 
- * This function displays the background image if the input field is empty
+ * This function displays the background image, if the input field is empty
  */
 
 function restoreEmailImg() {
@@ -46,7 +46,7 @@ emailField.addEventListener('blur', restoreEmailImg);
  * This global variable detects the input field with the id 'password-field'
  */
 
-passwordField = document.getElementById('password-field');
+passwordField = document.getElementById('password');
 
 /**
  * 

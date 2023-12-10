@@ -13,11 +13,12 @@
     <script defer src="./assets/script/script.js"></script>
     <script defer src="./assets/script/sign_up.js"></script>
     <script defer src="./assets/script/storage.js"></script>
+    <script defer src="./assets/script/register.js"></script>
 
     <title>Join - Login</title>
 </head>
 
-<body onload="init()">
+<body onload="registerBtn()">
     <div id="content" class="dark">
         <img id="big-logo" class="big-logo big-logo-querry white-Logo" src="./assets/img/login-site/big-join-logo.svg" alt="">
         <div id="main-header" class="opacity-zero">
@@ -32,15 +33,15 @@
                     <p id="login-paragraph">Log in</p>
                     <div id="blue-line"></div>
                 </div>
-                <form onsubmit="" id="input-fields">
-                    <input id="email-field" class="login-fields" type="email" placeholder="Email" required>
-                    <input id="password-field" class="login-fields" type="password" placeholder="Password" required>
+                <form onsubmit="register(); return false;" id="input-fields">
+                    <input required id="email" class="login-fields" type="email" placeholder="Email" >
+                    <input required id="password" class="login-fields" type="password" placeholder="Password" >
                     <label id="remember-checkbox">
                         <input type="checkbox" placeholder="Password">
                         <p class="paragraphs cursor-pointer">Remember me</p>
                     </label>
                     <div id="register-btns">
-                        <button class="log-in-btn" type="submit">Log in</button>
+                        <button class="log-in-btn" id="registerBtn">Log in</button>
                         <a onclick="loadGuestLogin()" id="guest-login-btn"><span>Guest Login</span></a>
                     </div>
                 </form>
@@ -57,5 +58,6 @@
         </div>
     </div>
 </body>
+
 
 </html>

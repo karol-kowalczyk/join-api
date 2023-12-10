@@ -59,14 +59,14 @@
                 background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
         }
 
-        #email-field {
+        #email {
                 background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
                 background-repeat: no-repeat;
                 text-indent: 20px;
                 background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
         }
 
-        #password-field {
+        #password {
                 background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
                 background-repeat: no-repeat;
                 text-indent: 20px;
