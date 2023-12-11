@@ -43,6 +43,11 @@ p {
         padding-bottom: 32px;
 }
 
+.board-icon {
+        position: fixed;
+        left: 64px;
+}
+
 a {
         font-size: 16px;
         text-decoration: none;
@@ -64,8 +69,8 @@ a {
         height: 73svh;
 }
 
-.gap-32px {
-        gap: 32px;
+.paragraph-board {
+        margin-left: 16px;
 }
 
 .profile-circle {

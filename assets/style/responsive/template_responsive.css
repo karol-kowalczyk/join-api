@@ -76,4 +76,20 @@
         #menu-links {
                 height: 0;
         }
+
+        .board-icon {
+                position: relative;
+                left: 0;
+        }
+
+        .paragraph-board {
+                margin: 0;
+        }
+}
+
+@media (max-width: 820px) {
+        #compliance-links {
+                padding-bottom: 0;
+        }
+        
 }
