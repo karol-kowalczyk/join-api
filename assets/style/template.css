@@ -11,7 +11,11 @@ p {
 }
 
 #content {
-     display: flex;   
+        display: flex;
+}
+
+#content-left-side {
+        display: flex;
 }
 
 #left-side-bar {
@@ -24,7 +28,8 @@ p {
         align-items: center;
         justify-content: center;
         gap: 8px;
-        margin-top: 15px;
+        margin-top: 32px;
+        cursor: pointer;
 }
 
 #join-logo {
@@ -48,13 +53,59 @@ a {
         cursor: pointer;
 }
 
-#menu {
 
+
+.menu-point-board {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+        width: 60%;
+        gap: 10px;
+        margin-left: 36px;
+        cursor: pointer;
 }
+
+#img-board {
+        margin-right: 8px;
+}
+
 
 #menu-links {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 73svh;
+}
+
+.profile-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 53px;
+        width: 53px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        background-color: #FFFFFF;
+        border: 3px solid #2A3647;
+        cursor: pointer;
+}
+
+#top-side-bar {
+        display: flex;
+        align-items: baseline;
+}
+
+#title {
+        color: black !important;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+}
+
+#initials {
+       color: #29ABE2;
+       font-weight: 600;
+       font-family: 'Inter', sans-serif; 
 }
