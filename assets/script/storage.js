@@ -4,9 +4,7 @@ const STORAGE_URL = 'https://remote-storage.developerakademie.org/item';
 
 async function setItem(key, value) {
         const payload = {key, value, token:STORAGE_TOKEN};
-        return fetch(STORAGE_URL, {method: 'POST', body: JSON.stringify(payload)}).then(res => res.json()); // fetch Befehl wird unsere CONST mit dem Link angesprochen und wir wollen mit der methiode
-        // post was hinseden und senden mit dem body text hin deswegen JSON.stringify und der text ist unsere const payload wo wir die parameter key, value und unseren Toke mitsenden
-
+        return fetch(STORAGE_URL, {method: 'POST', body: JSON.stringify(payload)}).then(res => res.json()); 
 }
 
 async function getItem(key) {
