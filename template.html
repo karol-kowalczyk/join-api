@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="assets/style/template.css">
         <link rel="stylesheet" href="assets/fonts/fonts.css">
+        <link rel="stylesheet" href="assets/style/responsive/template_responsive.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                         <div id="left-side-bar">
                                 <img id="join-logo" src="assets/img/template/main-logo.svg" alt="join" srcset="">
                                 <div id="menu-links">
-                                        <div>
+                                        <div class="menu-links-div">
                                                 <div class="menu-points">
                                                         <img src="assets/img/template/summary.svg" alt="summary">
                                                         <p>Summary</p>
@@ -29,8 +30,8 @@
                                                         <img src="assets/img/template/add-Task.svg" alt="add task">
                                                         <p>Add task</p>
                                                 </div>
-                                                <div class="menu-point-board">
-                                                        <img id="img-board" src="assets/img/template/board.svg" alt=""
+                                                <div class="menu-points gap-32px">
+                                                        <img src="assets/img/template/board.svg" alt=""
                                                                 srcset="">
                                                         <p>Board</p>
                                                 </div>
@@ -47,9 +48,18 @@
                         </div>
                 </div>
                 <div id="top-side-bar">
-                        <p id="title">Kanban Project Management Tool</p>
-                        <img src="assets/img/template/help.svg" alt="question-mark">
-                        <div class="profile-circle"><p id="initials">KK</p></div>
+                        <div id="title-kanban-div">
+                                <p id="title">Kanban Project Management Tool</p>
+                                <div class="responsive-div">
+                                        <img src="assets/img/template/little-join.svg" alt="" srcset="">
+                                </div>
+                        </div>
+                        <div id="right-side-top-bar">
+                                <img id="question-mark" src="assets/img/template/help.svg" alt="question-mark">
+                                <div class="profile-circle">
+                                        <p id="initials">KK</p>
+                                </div>
+                        </div>
                 </div>
         </div>
 </body>
