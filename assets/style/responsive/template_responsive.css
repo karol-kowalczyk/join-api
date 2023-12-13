@@ -17,7 +17,7 @@
                 display: none;
         }
 
-        #content {
+        #whole-part {
                 display: flex;
                 flex-direction: column-reverse;
                 overflow: hidden;

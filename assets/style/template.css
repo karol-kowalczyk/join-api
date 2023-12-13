@@ -10,7 +10,7 @@ p {
         color: #ffffff;
 }
 
-#content {
+#whole-part {
         display: flex;
         overflow: hidden;
 }

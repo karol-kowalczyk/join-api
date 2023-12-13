@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/join-project-management-tool/assets/img/favicon.svg" type="image">
+        <link rel="stylesheet" href="assets/style/template.css">
         <link rel="stylesheet" href="assets/fonts/fonts.css">
+        <link rel="stylesheet" href="assets/style/responsive/template_responsive.css">
 
         <script defer src="./assets/script/storage.js"></script>
-        
-        <title>Document</title>
+        <script defer src="./assets/script/template.js"></script>
+
+        <title>Join - Board</title>
 </head>
-<body>
-        <h1>test</h1>
+
+<body onload="includeHTML()">
+        <div w3-include-html="./template.html"></div>
+        <div id="content">
+                <h1>Join 360</h1>
+        </div>
 </body>
+
 </html>
