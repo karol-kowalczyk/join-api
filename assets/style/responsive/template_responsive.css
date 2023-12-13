@@ -17,7 +17,7 @@
                 display: none;
         }
 
-        #whole-part {
+        #content {
                 display: flex;
                 flex-direction: column-reverse;
                 overflow: hidden;
@@ -103,7 +103,7 @@
 
 @media (max-height: 750px) {
         #menu-links {
-                height: 65svh;
+                height: 60svh;
         }
         
 }
