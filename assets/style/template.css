@@ -12,6 +12,7 @@ p {
 
 #content {
         display: flex;
+        overflow: hidden;
 }
 
 #content-left-side {

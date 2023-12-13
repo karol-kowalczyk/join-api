@@ -93,3 +93,17 @@
         }
         
 }
+
+@media (max-height: 850px) {
+        #menu-links {
+                height: 70svh;
+        }
+        
+}
+
+@media (max-height: 750px) {
+        #menu-links {
+                height: 65svh;
+        }
+        
+}
