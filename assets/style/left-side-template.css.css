@@ -1,0 +1,55 @@
+#left-side {
+        background-color: #2A3647;
+        width: 16%;
+}
+
+#menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 64px 0 64px 0;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+}
+
+#icons {
+        height: 220px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 260px;
+}
+
+#join-logo {
+        margin-bottom: 128px;
+}
+
+.menu-points {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+}
+
+
+p {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+}
+
+a {
+        font-size: 16px;
+        text-decoration: none;
+        color: #A8A8A8;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        padding: 8px;
+        cursor: pointer;
+}
+
+#compliance-links {
+        display: flex;
+        flex-direction: column;
+}
