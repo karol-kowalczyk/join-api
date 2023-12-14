@@ -1,6 +1,9 @@
 #left-side {
         background-color: #2A3647;
-        width: 232px;
+        width: 208px;
+        height: 100vh;
+        left: 0;
+        position: fixed;
 }
 
 #menu {
@@ -14,20 +17,39 @@
 
 #icons {
         height: 220px;
+        width: 100%;
         margin-bottom: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
 
 #join-logo {
         margin-bottom: 128px;
 }
 
+#board-icon {
+        position: absolute;
+        left: 50px;
+}
+
+.board-p {
+        margin-left: 16px;
+}
+
 .menu-points {
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 16px;
+        width: 100%;
+        justify-content: center;
+        cursor: pointer;
+        padding: 16px 0;
 }
 
+.menu-points:hover {
+        background-color: rgb(29, 39, 52);
+}
 
 p {
         margin: 0;
@@ -50,14 +72,6 @@ a {
 #compliance-links {
         display: flex;
         flex-direction: column;
-}
-
-.menu-points {
-        cursor: pointer;
-}
-
-.menu-points:hover {
-        background-color: rgb(29, 39, 52);
 }
 
 #headline {
