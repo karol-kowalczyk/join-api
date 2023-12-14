@@ -3,8 +3,8 @@ async function includeHTML() {
 
         for (let i = 0; i < includeElements.length; i++) {
                 const element = includeElements[i];
-                
-                let file = element.getAttribute('w3-include-html');
+
+                file = element.getAttribute("w3-include-html");
                 resp = await fetch(file);
 
                 if(resp.ok) {
@@ -12,5 +12,6 @@ async function includeHTML() {
                 } else {
                         element.innerHTML = 'Page not found';
                 }
+                
         }
 }
