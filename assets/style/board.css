@@ -54,6 +54,19 @@ h1 {
         gap: 16px;
 }
 
+.cards-top:hover {
+        background-color: #2A3647;
+        color: #FFFFFF;
+
+        .number-to-do {
+                color: #FFFFFF;  
+        }
+
+        .cards-icons-hover {
+                background-image: url(/join-project-management-tool/assets/img/board/check_hover.svg) !important;
+        }
+}
+
 #board-middle {
         margin-top: 32px;
         display: flex;
@@ -129,6 +142,7 @@ h1 {
         display: flex;
         align-items: center;
         gap: 16px;
+        margin-left: 24px;
 }
 
 #card-middle-right-side {
@@ -155,94 +169,4 @@ h1 {
 
 #topic-paragraph {
         display: contents;
-}
-
-@media (max-width: 1369px) {
-        #surename-name {
-                font-size: 54px;
-        }
-
-        #greeting {
-                font-size: 39px;
-        }
-}
-
-@media (max-width: 1204px) {
-        #surename-name {
-                font-size: 48px;
-        }
-
-        #greeting {
-                font-size: 32px;
-        }
-}
-
-@media (max-width: 1000px) {
-        #surename-name {
-                font-size: 48px;
-        }
-
-        #greeting {
-                font-size: 32px;
-        }
-
-        #date {
-                font-size: 16px;
-        }
-
-        #card-middle-left-side {
-                gap: 8px;
-        }
-
-        #board-middle {
-                gap: 32px;
-        }
-}
-
-@media (max-width: 900px) {
-        #content {
-                margin: 40px 16px 0 16px;
-        }
-
-        #greeting-div {
-                display: none;
-        }
-
-        #heading {
-                display: block;
-                width: 223px;
-        }
-
-        h1 {
-                font-size: 47px;
-        }
-
-        #blue-left-border {
-                height: 0;
-                width: 90px;
-                border-left: none;
-                border-bottom: 3px solid #29ABE2;
-                border-radius: 3px;
-        }
-
-        #topic-paragraph {
-                display: flex;
-                flex-direction: column-reverse;
-                gap: 8px;
-        }
-
-        #board-top {
-                justify-content: space-between;
-                margin-top: 32px;
-        }
-
-        .cards-top {
-                width: 186px;
-                height: 110px;
-        }
-}
-
-@media (max-width: 970px) {
-
-        
 }

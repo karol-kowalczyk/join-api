@@ -1,0 +1,168 @@
+@media (max-width: 1369px) {
+        #surename-name {
+                font-size: 54px;
+        }
+
+        #greeting {
+                font-size: 39px;
+        }
+}
+
+@media (max-width: 1204px) {
+        #surename-name {
+                font-size: 48px;
+        }
+
+        #greeting {
+                font-size: 32px;
+        }
+}
+
+@media (max-width: 1000px) {
+        #surename-name {
+                font-size: 48px;
+        }
+
+        #greeting {
+                font-size: 32px;
+        }
+
+        #date {
+                font-size: 16px;
+        }
+
+        #card-middle-left-side {
+                gap: 8px;
+        }
+
+        #board-middle {
+                gap: 32px;
+        }
+}
+
+@media (max-width: 970px) {
+
+        #content {
+                margin: 80px 32px 0 266px;
+        }
+}
+
+@media (max-width: 900px) {
+        #content {
+                margin: 40px 16px 0 16px !important;
+        }
+
+        #greeting-div {
+                display: none;
+        }
+
+        #heading {
+                display: block;
+                width: 223px;
+        }
+
+        h1 {
+                font-size: 47px;
+        }
+
+        #blue-left-border {
+                height: 0;
+                width: 90px;
+                border-left: none;
+                border-bottom: 3px solid #29ABE2;
+                border-radius: 3px;
+        }
+
+        #topic-paragraph {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 8px;
+        }
+
+        .cards-top {
+                width: 186px;
+                height: 110px;
+        }
+
+        #card-middle {
+                height: 110px;
+                width: 396px;
+        }
+
+        .cards-bottom {
+                width: 116px;
+                height: 116px;
+        }
+
+        #card-middle-left-side {
+                margin-left: 0px !important;
+        }
+}
+
+
+@media (max-width: 440px) {
+        .cards-icons {
+                height: 40px;
+                width: 40px;
+                object-fit: cover;
+        }
+
+        .number-to-do {
+                font-weight: 600;
+                font-size: 47px;
+        }
+
+        .to-do-paragraph {
+                font-size: 14px;
+                font-weight: 400;
+        }
+
+
+        #card-middle-left-side {
+                margin-left: 24px !important;
+        }
+}
+
+@media (max-height: 812px) {
+        #board-top {
+                margin-top: 32px;
+        }
+}
+
+@media (width: 360px),
+(height: 740) {
+        #content {
+                margin: 16px 16px 0 16px !important;
+        }
+
+        #board-top {
+                margin-top: 16px;
+        }
+
+        #board-middle {
+                margin-top: 16px;
+        }
+
+        #board-bottom {
+                margin-top: 16px;
+        }
+}
+
+@media (width: 1024px),
+(height: 800) {
+        #content {
+                margin: 24px 16px 0 280px;
+        }
+
+        #board-top {
+                margin-top: 16px;
+        }
+
+        #board-middle {
+                margin-top: 16px;
+        }
+
+        #board-bottom {
+                margin-top: 16px;
+        }
+}
