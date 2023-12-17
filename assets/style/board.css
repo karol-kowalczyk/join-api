@@ -153,6 +153,10 @@ h1 {
         font-size: 16px;
 }
 
+#topic-paragraph {
+        display: contents;
+}
+
 @media (max-width: 1369px) {
         #surename-name {
                 font-size: 54px;
@@ -197,7 +201,7 @@ h1 {
 
 @media (max-width: 900px) {
         #content {
-                margin: 48px 16px 0 16px;
+                margin: 40px 16px 0 16px;
         }
 
         #greeting-div {
@@ -236,4 +240,9 @@ h1 {
                 width: 186px;
                 height: 110px;
         }
+}
+
+@media (max-width: 970px) {
+
+        
 }
