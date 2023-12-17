@@ -55,16 +55,32 @@ h1 {
 }
 
 .cards-top:hover {
-        background-color: #2A3647;
+        background-color: rgb(29, 39, 52);
+        color: #FFFFFF;
+
+        .number-to-do {
+                color: #FFFFFF;  
+        }
+}
+
+#card-middle:hover {
+        background-color: rgb(29, 39, 52);
         color: #FFFFFF;
 
         .number-to-do {
                 color: #FFFFFF;  
         }
 
-        .cards-icons-hover {
-                background-image: url(/join-project-management-tool/assets/img/board/check_hover.svg) !important;
+}
+
+.cards-bottom:hover {
+        background-color: rgb(29, 39, 52);
+        color: #FFFFFF;
+
+        .number-to-do {
+                color: #FFFFFF;  
         }
+
 }
 
 #board-middle {
@@ -116,7 +132,7 @@ h1 {
 }
 
 .to-do-paragraph {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
 }
 
