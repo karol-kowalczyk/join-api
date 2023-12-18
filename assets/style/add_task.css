@@ -16,11 +16,13 @@ h1 {
         margin-bottom: 64px;
 }
 
-.title, .date, #required-div {
+.title,
+.date,
+#required-div {
         display: flex;
         gap: 4px;
         font-size: 20px;
-    }
+}
 
 .red-star {
         color: red;
@@ -29,7 +31,7 @@ h1 {
 .input-fields {
         width: 400px;
         height: 32px;
-        border: 1px solid #D1D1D1;        
+        border: 1px solid #D1D1D1;
         border-radius: 10px;
         margin-top: 8px;
         margin-bottom: 24px;
@@ -49,7 +51,7 @@ h1 {
 textarea {
         width: 400px;
         height: 120px;
-        border: 1px solid #D1D1D1;       
+        border: 1px solid #D1D1D1;
         margin-top: 8px;
         margin-bottom: 24px;
         border-radius: 10px;
@@ -65,7 +67,7 @@ textarea::placeholder {
 }
 
 #contacts-dropdown {
-        margin-bottom: 172px;
+        margin-bottom: 156px;
 }
 
 #contacts-dropdown::placeholder {
@@ -82,7 +84,7 @@ textarea::placeholder {
 #date {
         width: 400px;
         height: 32px;
-        border: 1px solid #D1D1D1;        
+        border: 1px solid #D1D1D1;
         border-radius: 10px;
         margin-top: 8px;
         margin-bottom: 24px;
@@ -91,6 +93,7 @@ textarea::placeholder {
         font-weight: 400;
         font-size: 20px;
         color: #D1D1D1;
+        cursor: pointer;
 }
 
 #date::placeholder {
@@ -98,5 +101,114 @@ textarea::placeholder {
         font-size: 16px;
         font-weight: 300;
         font-size: 20px;
+        cursor: pointer;
 }
 
+#urgent,
+#medium,
+#low {
+        height: 56px;
+        width: 136px;
+        cursor: pointer;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border: 1px solid #D1D1D1;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 400;
+}
+
+#urgent:hover,
+#medium:hover,
+#low:hover {
+        box-shadow: 2px 4px 4px 2px #0000001A;
+}
+
+#urgent:focus {
+        background-color: #FF4910;
+        box-shadow: 2px 4px 4px 2px #0000001A;
+        color: #ffffff;
+}
+
+#medium:focus {
+        background-color: #FFA500;
+        box-shadow: 2px 4px 4px 2px #0000001A;
+        color: #ffffff;
+}
+
+#low:focus {
+        background-color: #7AE229;
+        box-shadow: 2px 4px 4px 2px #0000001A;
+        color: #ffffff;
+}
+
+#prioritize {
+        display: flex;
+        gap: 8px;
+        margin: 8px 0 24px 0;
+}
+
+#tasks-dropdown::placeholder {
+        color: black;
+        font-weight: 400;
+}
+
+#clear-btn,
+#create-btn {
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+#clear-btn {
+        height: 56px;
+        width: 110px;
+        font-size: 20px;
+        font-weight: 400;
+        border: 1px solid black;
+        background-color: #ffffff;
+}
+
+#clear-btn:hover {
+        color: #29ABE2;
+        border: 1px solid #29ABE2;
+}
+
+#create-btn {
+        width: 183px;
+        height: 56px;
+        font-size: 21px;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #2A3647;
+        border: none;
+}
+
+#create-btn:hover {
+        background-color: #29ABE2;
+}
+
+#create-delete-div {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-end;
+}
+
+#add-subtask {
+        cursor: pointer;
+        background: url(/join-project-management-tool/assets/img/add_task/add.svg) no-repeat scroll 7px 7px;
+        background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
+}
+
+.right-side {
+        margin-top: 106px;
+}
+
+#subtask-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 188px;
+}
