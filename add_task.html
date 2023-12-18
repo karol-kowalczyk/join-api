@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,26 @@
 
         <script defer src="./assets/script/storage.js"></script>
         <script defer src="./assets/script/template.js"></script>
-        <title>Document</title>
+        <title>Join - Add Task</title>
 </head>
+
 <body onload="includeHTML()">
         <div w3-include-html="./left-side-template.html"></div>
         <div w3-include-html="./top-head-template.html"></div>
+        <div id="content">
+                <h1>Add Task</h1>
+                <div class="title">Title <div class="red-star">*</div>
+                </div>
+                <input class="input-fields" type="text" placeholder="Enter a title">
+
+                <div class="title">Description</div>
+
+
+                <textarea rows="4" cols="50" name="description" placeholder="Enter a Description"></textarea>
+
+                <div>Assigned to</div>
+                <option class="input-fields" value=""></option>
+        </div>
 </body>
+
 </html>
