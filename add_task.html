@@ -21,18 +21,34 @@
         <div w3-include-html="./left-side-template.html"></div>
         <div w3-include-html="./top-head-template.html"></div>
         <div id="content">
-                <h1>Add Task</h1>
-                <div class="title">Title <div class="red-star">*</div>
+                <div class="left-side">
+                        <h1>Add Task</h1>
+                        <div class="title">Title <div class="red-star">*</div>
+                        </div>
+                        <input class="input-fields" type="text" placeholder="Enter a title">
+
+                        <div class="title">Description</div>
+
+
+                        <textarea rows="4" cols="50" name="description" placeholder="Enter a Description"></textarea>
+
+                        <div class="title">Assigned to</div>
+                        <input id="contacts-dropdown" class="input-fields" type="text"
+                                placeholder="Select contacts to assign">
+                        <div id="required-div">
+                                <div class="red-star">*</div>This field is required
+                        </div>
                 </div>
-                <input class="input-fields" type="text" placeholder="Enter a title">
+                <div id="border"></div>
+                <div class="right-side">
+                        <div class="date">Due date <div class="red-star">*</div></div>
+                        <input id="date" type="date">
 
-                <div class="title">Description</div>
-
-
-                <textarea rows="4" cols="50" name="description" placeholder="Enter a Description"></textarea>
-
-                <div>Assigned to</div>
-                <option class="input-fields" value=""></option>
+                        <div class="title">Prio</div>
+                        <button id="urgent">Urgent <img src="./assets/" alt=""></button>
+                        <button></button>
+                        <button></button>
+                </div>
         </div>
 </body>
 

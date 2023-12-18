@@ -5,6 +5,9 @@
 
 #content {
         margin: 80px 32px 0 340px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
 
 h1 {
@@ -13,9 +16,10 @@ h1 {
         margin-bottom: 64px;
 }
 
-.title {
+.title, .date, #required-div {
         display: flex;
         gap: 4px;
+        font-size: 20px;
     }
 
 .red-star {
@@ -59,3 +63,40 @@ textarea::placeholder {
         font-weight: 300;
         font-size: 20px;
 }
+
+#contacts-dropdown {
+        margin-bottom: 172px;
+}
+
+#contacts-dropdown::placeholder {
+        color: black;
+        font-weight: 400;
+}
+
+#border {
+        color: #D1D1D1;
+        border: 1px solid #D1D1D1;
+        height: 424px;
+}
+
+#date {
+        width: 400px;
+        height: 32px;
+        border: 1px solid #D1D1D1;        
+        border-radius: 10px;
+        margin-top: 8px;
+        margin-bottom: 24px;
+        padding: 8px;
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #D1D1D1;
+}
+
+#date::placeholder {
+        color: #D1D1D1;
+        font-size: 16px;
+        font-weight: 300;
+        font-size: 20px;
+}
+
