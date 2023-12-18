@@ -52,13 +52,61 @@
                 margin: 40px 16px 0 16px !important;
         }
 
+        #board-top {
+                margin-top: 32px;
+        }
+
+        #left-side {
+                position: fixed;
+                bottom: 0;
+                z-index: 999;
+        }
+
+}
+
+@media (max-width: 650px) {
+
+        body {
+                overflow: hidden;
+        }
+
+        #content {
+                margin: 20px 16px 0 16px !important;
+        }
+
+        #board-top {
+                margin-top: 32px;
+        }
+
+        #heading {
+                display: block;
+        }
+
+        #blue-left-border {
+                height: 0;
+                width: 90px;
+                border-left: none;
+                border-bottom: 3px solid #29ABE2;
+                border-radius: 3px;
+        }
+
+        #greeting-div {
+                display: none;
+        }
+}
+
+
+@media (max-width: 440px) {
+        #content {
+                margin: 40px 16px 0 16px !important;
+        }
+
         #greeting-div {
                 display: none;
         }
 
         #heading {
                 display: block;
-                width: 223px;
         }
 
         h1 {
@@ -94,13 +142,6 @@
                 height: 116px;
         }
 
-        #card-middle-left-side {
-                margin-left: 0px !important;
-        }
-}
-
-
-@media (max-width: 440px) {
         .cards-icons {
                 height: 40px;
                 width: 40px;
@@ -123,14 +164,21 @@
         }
 }
 
+@media (max-height: 900px) {
+        #icons {
+                height: auto;
+        }
+}
+
+
 @media (max-height: 812px) {
         #board-top {
                 margin-top: 32px;
         }
 }
 
-@media (width: 360px),
-(height: 740) {
+@media (width: 360px) and
+(height: 740px) {
         #content {
                 margin: 16px 16px 0 16px !important;
         }
@@ -148,8 +196,8 @@
         }
 }
 
-@media (width: 1024px),
-(height: 800) {
+@media (width: 1024px) and
+(height: 800px) {
         #content {
                 margin: 24px 16px 0 280px;
         }
@@ -164,5 +212,31 @@
 
         #board-bottom {
                 margin-top: 16px;
+        }
+}
+
+@media (width: 414px) and
+(height: 736px) {
+        #content {
+                margin-top: 16px;       
+        }
+}
+
+@media (max-height: 760px) {
+        #content {
+                margin-top: 32px;
+        }
+
+        .cards-top {
+                height: 120px;
+                width: 220px;
+        }
+
+        #greeting-div {
+                display: none;
+        }
+
+        #card-middle {
+                height: 128px;
         }
 }

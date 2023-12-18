@@ -87,3 +87,25 @@
                 font-size: 12px;
         }
 }
+
+@media (max-height: 900px) {
+        #icons {
+                margin-bottom: 200px;
+        }
+}
+
+@media (max-height: 850px) {
+        #icons {
+                margin-bottom: 80px;
+        }
+}
+
+@media (max-height: 750px) {
+        #icons {
+                height: 40px;
+        }
+
+        #join-logo {
+                margin-bottom: 80px;
+        }
+}
