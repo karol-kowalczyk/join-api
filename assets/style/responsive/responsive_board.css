@@ -1,242 +1,201 @@
-@media (max-width: 1369px) {
-        #surename-name {
-                font-size: 54px;
-        }
-
+@media (max-width: 1370px) {
         #greeting {
-                font-size: 39px;
+                font-size: 28px;
         }
-}
 
-@media (max-width: 1204px) {
         #surename-name {
-                font-size: 48px;
-        }
-
-        #greeting {
-                font-size: 32px;
+                font-size: 36px;
         }
 }
 
-@media (max-width: 1000px) {
-        #surename-name {
-                font-size: 48px;
-        }
-
-        #greeting {
-                font-size: 32px;
-        }
-
-        #date {
-                font-size: 16px;
-        }
-
-        #card-middle-left-side {
-                gap: 8px;
-        }
-
-        #board-middle {
-                gap: 32px;
-        }
-}
-
-@media (max-width: 970px) {
-
-        #content {
-                margin: 80px 32px 0 266px;
-        }
-}
-
-@media (max-width: 900px) {
-        #content {
-                margin: 40px 16px 0 16px !important;
-        }
-
-        #board-top {
-                margin-top: 32px;
-        }
-
-        #left-side {
-                position: fixed;
-                bottom: 0;
-                z-index: 999;
-        }
-
-}
-
-@media (max-width: 650px) {
-
-        body {
-                overflow: hidden;
-        }
-
-        #content {
-                margin: 20px 16px 0 16px !important;
-        }
-
-        #board-top {
-                margin-top: 32px;
-        }
-
-        #heading {
-                display: block;
-        }
-
-        #blue-left-border {
-                height: 0;
-                width: 90px;
-                border-left: none;
-                border-bottom: 3px solid #29ABE2;
-                border-radius: 3px;
-        }
-
+@media (max-width: 1210px) {
         #greeting-div {
                 display: none;
         }
 }
 
-
-@media (max-width: 440px) {
-        #content {
-                margin: 40px 16px 0 16px !important;
-        }
-
-        #greeting-div {
-                display: none;
-        }
-
+@media (max-width: 980px) {
         #heading {
-                display: block;
-        }
-
-        h1 {
-                font-size: 47px;
+                display: inline;
         }
 
         #blue-left-border {
-                height: 0;
-                width: 90px;
+                height: 16px;
                 border-left: none;
                 border-bottom: 3px solid #29ABE2;
-                border-radius: 3px;
+                ;
+                width: 27%;
         }
 
         #topic-paragraph {
                 display: flex;
                 flex-direction: column-reverse;
-                gap: 8px;
         }
 
+        #content {
+                margin-top: 40px;
+        }
+}
+
+@media (max-width: 900px) {
+        #content {
+                margin: 40px 16px 0 40px;
+        }
+
+        #board-top {
+                margin-top: 32px;
+        }
+}
+
+@media (max-width: 450px) {
         .cards-top {
+                height: 128px;
                 width: 186px;
-                height: 110px;
         }
 
         #card-middle {
-                height: 110px;
+                height: 128px;
                 width: 396px;
         }
 
+        .number-to-do {
+                font-size: 47px;
+        }
+
+        .cards-icons {
+                width: 40px;
+                height: 40px;
+        }
+
+        .to-do-paragraph {
+                font-size: 14px;
+        }
+
         .cards-bottom {
-                width: 116px;
                 height: 116px;
+        }
+
+        #content {
+                margin: 40px 16px 0 16px;
+        }
+}
+
+@media (max-width: 390px) {
+        #date {
+                font-size: 17px;
+        }
+}
+
+/* height */
+@media (max-height: 880px) {
+        #content {
+                margin-top: 24px;
+        }
+
+        .cards-top {
+                height: 128px;
+        }
+
+        #card-middle {
+                height: 128px;
+        }
+
+        .cards-bottom {
+                height: 128px;
+        }
+}
+
+@media (max-height: 800px) {
+        #content {
+                margin-top: 20px;
+        }
+
+        .cards-top {
+                height: 88px;
         }
 
         .cards-icons {
                 height: 40px;
-                width: 40px;
-                object-fit: cover;
+        }
+
+        #card-middle {
+                height: 102px;
+        }
+
+        #border-grey {
+                height: 66%;
+        }
+
+        .cards-bottom {
+                height: 108px;
         }
 
         .number-to-do {
-                font-weight: 600;
                 font-size: 47px;
         }
 
         .to-do-paragraph {
                 font-size: 14px;
-                font-weight: 400;
         }
 
-
-        #card-middle-left-side {
-                margin-left: 24px !important;
-        }
 }
 
-@media (max-height: 900px) {
-        #icons {
-                height: auto;
-        }
-}
-
-
-@media (max-height: 812px) {
-        #board-top {
-                margin-top: 32px;
-        }
-}
-
-@media (width: 360px) and
-(height: 740px) {
-        #content {
-                margin: 16px 16px 0 16px !important;
+@media (max-height: 730px) {
+        h1 {
+                font-size: 48px;
         }
 
-        #board-top {
-                margin-top: 16px;
+        .paragraph {
+                font-size: 20px;
         }
 
-        #board-middle {
-                margin-top: 16px;
-        }
-
+        #board-top,
+        #board-middle,
         #board-bottom {
                 margin-top: 16px;
         }
 }
 
-@media (width: 1024px) and
-(height: 800px) {
-        #content {
-                margin: 24px 16px 0 280px;
+/* iphone 5/SE  */
+
+@media (height: 568px),
+(width: 320px) {
+        h1 {
+                font-size: 24px;
         }
 
-        #board-top {
-                margin-top: 16px;
-        }
-
-        #board-middle {
-                margin-top: 16px;
-        }
-
-        #board-bottom {
-                margin-top: 16px;
-        }
-}
-
-@media (width: 414px) and
-(height: 736px) {
-        #content {
-                margin-top: 16px;       
-        }
-}
-
-@media (max-height: 760px) {
-        #content {
-                margin-top: 32px;
+        .paragraph {
+                font-size: 12px;
         }
 
         .cards-top {
-                height: 120px;
-                width: 220px;
+                height: 68px;
         }
 
-        #greeting-div {
-                display: none;
+        .cards-icons {
+                height: 28px;
+        }
+
+        .number-to-do {
+                font-size: 28px;
+        }
+
+        .to-do-paragraph {
+                font-size: 11px;
+        }
+        #date {
+                font-size: 14px;
+        }
+
+        #deadline {
+                font-size: 12px;
         }
 
         #card-middle {
-                height: 128px;
+                height: 80px;
+        }
+
+        .cards-bottom {
+                height: 80px;
         }
 }

@@ -101,11 +101,15 @@
 }
 
 @media (max-height: 750px) {
-        #icons {
-                height: 40px;
-        }
 
         #join-logo {
                 margin-bottom: 80px;
+        }
+}
+
+@media (max-height: 730px) {
+        .menu-icons {
+                width: 22px;
+                height: 22px;
         }
 }
