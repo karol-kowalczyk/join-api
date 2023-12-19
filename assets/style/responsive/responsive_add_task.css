@@ -1,0 +1,268 @@
+@media (max-width: 1270px) {
+        #content {
+                margin: 80px 32px 0 280px;
+        }
+}
+
+@media (max-width: 1200px) {
+        #content {
+                margin: 80px 32px 0 240px;
+        }
+}
+
+@media (max-width: 1150px) {
+        #content {
+                margin: 40px 32px 0 240px;
+                display: block;
+        }
+
+        #border {
+                display: none;
+        }
+
+        #contacts-dropdown {
+                margin-bottom: 16px;
+        }
+
+        #required-div {
+                display: none;
+        }
+
+        #responsive-required-div {
+                display: flex;
+                gap: 4px;
+                font-size: 20px;
+        }
+
+        #create-delete-div {
+                display: flex;
+                gap: 16px;
+                justify-content: space-between;
+                flex-direction: column;
+                margin-bottom: 24px;
+        }
+
+        #responsive-clear-create-btns {
+                display: flex;
+                gap: 16px;
+        }
+
+        h1 {
+                font-size: 61px;
+                font-weight: 700;
+                margin-bottom: 32px;
+        }
+
+        .right-side {
+                margin-top: 8px;
+        }
+}
+
+@media (max-width: 900px) {
+        #content {
+                margin: 32px;
+                height: 116svh;
+        }
+
+        .input-fields,
+        textarea,
+        #date {
+                width: 100%;
+        }
+
+        #prioritize {
+                display: flex;
+                justify-content: space-between;
+                width: 103%;
+        }
+
+        #urgent,
+        #medium,
+        #low {
+                width: 30%;
+        }
+}
+
+@media (max-width: 430px) {
+        .prio-icons {
+                width: 20px;
+        }
+
+        #urgent,
+        #medium,
+        #low {
+                font-size: 16px;
+        }
+}
+
+@media (max-width: 380px) {
+        #clear-btn {
+                display: none;
+        }
+
+        #create-delete-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 320px;
+                align-items: center;
+        }
+
+        #create-btn {
+                width: 116px;
+                height: 44px;
+                font-size: 14px;
+        }
+
+        #responsive-required-div {
+                font-size: 16px;
+        }
+}
+
+@media (max-width: 355px) {
+        .prio-icons {
+                width: 18px;
+        }
+
+        #urgent,
+        #medium,
+        #low {
+                font-size: 14px;
+        }
+
+        #create-delete-div {
+                justify-content: space-evenly;
+        }
+
+        #responsive-required-div {
+                font-size: 14px;
+        }
+
+        #subtask-div { 
+                height: auto;
+        }
+}
+
+@media (max-width: 345px) {
+        #content {
+                height: 132svh !important;
+        }
+
+        #create-btn {
+                width: 96px;
+                height: 44px;
+                font-size: 12px;
+                font-weight: 100;
+        }
+}
+
+@media (max-height: 900px) and (max-width: 900px) {
+        #contacts-dropdown {
+                margin-bottom: 88px;
+        }
+
+        #content {
+                height: 128svh;
+        }
+
+        #contacts-dropdown {
+                margin-bottom: 24px;
+        }
+}
+
+@media (max-height: 850px) and (max-width: 900px) {
+        #contacts-dropdown {
+                margin-bottom: 44px;
+        }
+
+        #content {
+                margin-top: 40px;
+        }
+
+        #content {
+                height: 136svh;
+        }
+}
+
+@media (max-height: 820px) and (max-width: 900px){
+        #content {
+                height: 140svh;
+        }
+}
+
+@media (max-height: 800px) and (max-width: 900px){
+        #content {
+                height: 144svh;
+        }
+}
+
+@media (max-height: 790px) {
+
+        #content{
+                margin-top: 20px;
+        }
+
+        #contacts-dropdown {
+                margin-bottom: 80px;
+        }
+}
+
+@media (max-height: 785px) and (max-width: 900px){
+        #subtask-div {
+                height: auto;
+        }
+
+        #content {
+                height: 148svh;
+        }
+}
+
+@media (max-height: 755px) {
+        #content {
+                height: 152svh;
+        }
+}
+
+@media (max-height: 740px) {
+        #content {
+                height: 160svh;
+        }
+}
+
+@media (max-height: 700px) {
+        #content {
+                height: 168svh;
+        }
+}
+
+@media (max-height: 680px) {
+        #content {
+                height: 174svh;
+        }
+}
+
+@media (max-height: 650px) {
+        #content {
+                height: 184svh;
+        }
+}
+
+@media (max-height: 610px) {
+        #content {
+                height: 190svh;
+        }
+}
+
+@media (max-height: 590px) {
+        #content {
+                height: 198svh;
+        }
+}
+
+/* iphone 5/se  */ 
+
+@media (height: 320) and (widht: 568px ) {
+        #content {
+                height: 152svh;
+        }
+}

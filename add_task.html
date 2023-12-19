@@ -46,11 +46,11 @@
 
                         <div class="title">Prio</div>
                         <div id="prioritize">
-                                <button id="urgent">Urgent <img src="./assets/img/add_task/urgent.svg"
+                                <button id="urgent">Urgent <img class="prio-icons" src="./assets/img/add_task/urgent.svg"
                                                 alt="urgent"></button>
-                                <button id="medium">Medium <img src="./assets/img/add_task/medium.svg"
+                                <button id="medium">Medium <img class="prio-icons" src="./assets/img/add_task/medium.svg"
                                                 alt="medium"></button>
-                                <button id="low">Low <img src="./assets/img/add_task/low.svg" alt="low"></button>
+                                <button id="low">Low <img class="prio-icons" src="./assets/img/add_task/low.svg" alt="low"></button>
                         </div>
                         <div class="title">Category</div>
                         <input id="tasks-dropdown" class="input-fields" type="text" placeholder="Select task category">
@@ -58,10 +58,16 @@
                         <div id="subtask-div">
                                 <input id="add-subtask" class="input-fields" type="text" placeholder="Add new subtask">
                                 <div id="create-delete-div">
-                                        <button id="clear-btn">Clear <img src="./assets/img/add_task/x.svg"
-                                                        alt="delete"></button>
-                                        <button id="create-btn">Create Task <img src="./assets/img/add_task/check.svg"
-                                                        alt="check"></button>
+                                        <div id="responsive-required-div" class="d-none">
+                                                <div class="red-star">*</div>This field is required
+                                        </div>
+                                        <div id="responsive-clear-create-btns">
+                                                <button id="clear-btn">Clear <img src="./assets/img/add_task/x.svg"
+                                                                alt="delete"></button>
+                                                <button id="create-btn">Create Task <img
+                                                                src="./assets/img/add_task/check.svg"
+                                                                alt="check"></button>
+                                        </div>
                                 </div>
                         </div>
                 </div>

@@ -66,6 +66,10 @@ textarea::placeholder {
         font-size: 20px;
 }
 
+.d-none {
+        display: none;
+}
+
 #contacts-dropdown {
         margin-bottom: 156px;
 }
