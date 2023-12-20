@@ -6,6 +6,8 @@ body {
 #header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
 }
 
 #header-right-side {
@@ -76,4 +78,49 @@ body {
 #add-task-btn:hover {
         background-color: #29ABE2;
         border: none;
+}
+
+#main-section {
+        display: flex;
+        justify-content: space-between;
+}
+
+
+.boards {
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+}
+
+.header-boards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+}
+
+.plus-icon {
+        cursor: pointer;
+}
+
+.board-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #42526E;
+        cursor: default;
+}
+
+.no-task-div {
+        height: 48px;
+        font-weight: 400;
+        font-size: 16px;
+        background-color: #E7E7E7;
+        color: #A8A8A8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        border-radius: 10px;
+        cursor: default;
 }
