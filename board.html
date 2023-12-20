@@ -22,16 +22,20 @@
         <div w3-include-html="./top-head-template.html"></div>
         <div id="content">
                 <div id="header">
-                        <div id="board-headline">Board</div>
+                        <div id="board-headline-div">
+                                <div id="board-headline">Board</div>
+                                <button id="add-task-btn" class="d-none d-block"><img src="./assets/img/board/add.svg"
+                                                alt="plus"></button>
+                        </div>
                         <div id="header-right-side">
                                 <label id="inputfield-div">
-                                        <input id="inputfield-search" type="text">
+                                        <input id="inputfield-search" type="text" placeholder="Find Task">
                                         <div id="search-icon-div">
                                                 <img id="search" src="./assets/img/board/search.svg" alt="search">
                                                 <div id="border-right"></div>
                                         </div>
                                 </label>
-                                <button id="add-task-btn">Add Task
+                                <button class="dl-none" id="add-task-btn">Add Task
                                         <img src="./assets/img/board/add.svg" alt="plus">
                                 </button>
                         </div>
@@ -71,7 +75,7 @@
                                 <div class="header-boards">
                                         <div class="board-title">Done</div>
                                         <img class="plus-icon" src="./assets/img/board/plus_button.svg"
-                                        alt="plus button">
+                                                alt="plus button">
                                 </div>
                                 <div class="no-task-div">
                                         No tasks To Do

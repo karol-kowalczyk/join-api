@@ -32,12 +32,29 @@ body {
         padding: 8px 16px 8px 16px;
         height: 32px;
         width: 320px;
+        align-items: center;
 }
 
 #inputfield-search {
         border: none;
         width: 280px;
         height: 32px;
+
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+}
+
+#inputfield-search::placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #D1D1D1;
 }
 
 #border-right {
@@ -123,4 +140,8 @@ body {
         border: 1px solid;
         border-radius: 10px;
         cursor: default;
+}
+
+.d-none {
+        display: none !important;
 }

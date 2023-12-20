@@ -5,6 +5,10 @@
 }
 
 @media (max-width: 1200px) {
+        #content {
+                margin: 20px 40px 0 280px;
+        }
+
         #inputfield-div {
                 width: 260px;
         }
@@ -12,7 +16,6 @@
 
 @media (max-width: 1140px) {
         #inputfield-div {
-                width: 220px;
                 height: 24px;
         }
 
@@ -40,7 +43,6 @@
         }
 
         #inputfield-div {
-                width: 200px;
                 height: 24px;
         }
 
@@ -48,6 +50,10 @@
                 border: none;
                 width: 280px;
                 height: 24px;
+        }
+
+        #border-right {
+                margin-right: 8px;
         }
 }
 
@@ -63,5 +69,98 @@
 
         .board-title {
                 font-size: 13.5px;
+        }
+}
+
+@media (max-width: 900px) {
+        #content {
+                margin: 0 32px;
+        }
+
+        .d-none {
+                display: block !important;
+        }
+
+        .dl-none {
+                display: none !important;
+        }
+
+        #add-task-btn {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                font-size: 0;
+        }
+
+        #board-headline {
+                font-size: 47px;
+        }
+
+        #board-headline-div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        #header {
+                display: block;
+                margin-bottom: 0;
+                margin-bottom: 0;
+                gap: 32px;
+                display: flex;
+                flex-direction: column;
+                align-items: normal;
+                margin: 32px 0;
+        }
+
+        #inputfield-search {
+                width: 100%;
+        }
+
+        #inputfield-div {
+                width: 100%;
+                justify-content: space-between;
+        }
+
+        #main-section {
+                display: block;
+                justify-content: space-between;
+        }
+
+        .boards {
+                width: 100%;
+                margin-bottom: 16px
+        }
+
+        #inputfield-div {
+                height: 32px;
+        }
+
+        .board-title {
+                font-size: 27px;
+                font-weight: 700;
+                font-size: 27px;
+                color: #2A3647;
+        }
+}
+
+@media (max-height: 800px) {
+        #content {
+                height: 110svh;
+        }
+}
+
+@media (max-height: 700px) {
+        #content {
+                height: 130svh;
+        }
+}
+
+@media (max-height: 600px) {
+        #content {
+                height: 150svh;
         }
 }
