@@ -1,19 +1,27 @@
-@media (max-width: 1270px) {
+@media (max-width: 1450px) {
         #content {
                 margin: 80px 32px 0 280px;
         }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
         #content {
                 margin: 80px 32px 0 240px;
+        }
+}
+
+@media (max-width: 1220px) {
+
+        .input-fields, #date, textarea {
+                width: 400px;
         }
 }
 
 @media (max-width: 1150px) {
         #content {
                 margin: 40px 32px 0 240px;
-                display: block;
+                display: flex;
+                flex-direction: column;
         }
 
         #border {
@@ -51,6 +59,8 @@
                 font-size: 61px;
                 font-weight: 700;
                 margin-bottom: 32px;
+                display: flex;
+                justify-content: center;
         }
 
         .right-side {
@@ -59,9 +69,15 @@
 }
 
 @media (max-width: 900px) {
+        h1 {
+                display: block;
+        }
+
+
         #content {
                 margin: 32px;
                 height: 116svh;
+                display: block;
         }
 
         .input-fields,
@@ -138,7 +154,7 @@
                 font-size: 14px;
         }
 
-        #subtask-div { 
+        #subtask-div {
                 height: auto;
         }
 }
@@ -184,13 +200,13 @@
         }
 }
 
-@media (max-height: 820px) and (max-width: 900px){
+@media (max-height: 820px) and (max-width: 900px) {
         #content {
                 height: 140svh;
         }
 }
 
-@media (max-height: 800px) and (max-width: 900px){
+@media (max-height: 800px) and (max-width: 900px) {
         #content {
                 height: 144svh;
         }
@@ -198,16 +214,12 @@
 
 @media (max-height: 790px) {
 
-        #content{
+        #content {
                 margin-top: 20px;
-        }
-
-        #contacts-dropdown {
-                margin-bottom: 80px;
         }
 }
 
-@media (max-height: 785px) and (max-width: 900px){
+@media (max-height: 785px)  {
         #subtask-div {
                 height: auto;
         }
@@ -215,6 +227,10 @@
         #content {
                 height: 148svh;
         }
+}
+
+@media (max-height:745px) and (max-width: 1145px) {
+        
 }
 
 @media (max-height: 755px) {
@@ -259,9 +275,9 @@
         }
 }
 
-/* iphone 5/se  */ 
+/* iphone 5/se  */
 
-@media (height: 320) and (widht: 568px ) {
+@media (height: 320px) and (widht: 568px) {
         #content {
                 height: 152svh;
         }

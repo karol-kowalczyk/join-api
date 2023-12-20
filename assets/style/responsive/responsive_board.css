@@ -31,4 +31,37 @@
                 height: 44px;
                 font-size: 16px;
         }
+
+}
+
+@media (max-width: 1122px) {
+        .board-title {
+                font-size: 14px;
+        }
+
+        #inputfield-div {
+                width: 200px;
+                height: 24px;
+        }
+
+        #inputfield-search {
+                border: none;
+                width: 280px;
+                height: 24px;
+        }
+}
+
+@media (max-width: 1042px) {
+        #content {
+                margin-left: 220px;
+        }
+
+        .plus-icon {
+                width: 20px;
+                height: 20px;
+        }
+
+        .board-title {
+                font-size: 13.5px;
+        }
 }
