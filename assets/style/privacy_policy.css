@@ -1,0 +1,31 @@
+* {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+}
+
+#content {
+        margin: 80px 160px 0 340px;
+}
+
+#privacy-policy-heading {
+        font-weight: 700;
+        font-size: 61px;
+        margin-bottom: 40px;
+}
+
+
+p {
+        color: black;
+        margin-bottom: 16px;
+}
+
+ul {
+        margin-bottom: 16px;
+}
+
+.bigger-headings {
+        color: black;
+        font-size: 30px;
+        margin-bottom: 32px;
+        margin-top: 32px;
+}
