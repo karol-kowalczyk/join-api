@@ -52,21 +52,21 @@
 }
 
 p {
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #ffffff;
+        margin: 0 !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
 }
 
 a {
-        font-size: 16px;
-        text-decoration: none;
-        color: #A8A8A8;
-        font-weight: 400;
-        font-family: 'Inter', sans-serif;
-        padding: 8px;
-        cursor: pointer;
+        font-size: 16px !important;
+        text-decoration: none !important;
+        color: #A8A8A8 !important;
+        font-weight: 400 !important;
+        font-family: 'Inter', sans-serif !important;
+        padding: 8px !important;
+        cursor: pointer !important;
 }
 
 #compliance-links {
@@ -79,7 +79,7 @@ a {
         font-family: 'Inter', sans-serif;
         font-size: 20px;
         font-weight: 400;
-        color: black;
+        color: black !important;
 }
 
 #top-header {
@@ -96,9 +96,10 @@ a {
 }
 
 #initials {
-        color: #29ABE2;
+        color: #29ABE2 !important;
         font-weight: 600;
         font-family: 'Inter', sans-serif;
+        margin-bottom: 0;
 }
 
 .profile-circle {

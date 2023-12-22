@@ -4,7 +4,7 @@
 }
 
 #content {
-        margin: 80px 160px 0 340px;
+        margin: 40px 160px 0 340px;
 }
 
 #privacy-policy-heading {
@@ -26,6 +26,36 @@ ul {
 .bigger-headings {
         color: black;
         font-size: 30px;
-        margin-bottom: 32px;
-        margin-top: 32px;
+        margin-bottom: 24px;
+}
+
+#table-contents {
+        margin: 24px 0;
+}
+
+li {
+        cursor: pointer;
+}
+
+a {
+        text-decoration: none;
+        padding: 0;
+        color: black;
+}
+
+.question-parts {
+        margin-bottom: 24px;
+}
+
+.number-dots {
+        color: black !important;
+}
+
+h3 {
+        margin: 24px 0;
+        cursor: pointer;
+}
+
+.information-section {
+        margin-bottom: 24px;
 }
