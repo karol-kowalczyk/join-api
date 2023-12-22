@@ -5,6 +5,13 @@
 
 #content {
         margin: 40px 160px 0 340px;
+        display: flex;
+        align-items: flex-start;
+}
+
+#left-arrow {
+        margin: 24px 12px 0 0;
+        cursor: pointer;
 }
 
 #privacy-policy-heading {

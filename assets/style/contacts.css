@@ -55,6 +55,14 @@ body {
         top: 120px;
 }
 
+#add-contact:hover {
+        cursor: pointer;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background: #29ABE2;
+        border-color: #29ABE2;
+
+}
+
 #contacts {
         background-color: white;
         height: 100%;
