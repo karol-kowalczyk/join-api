@@ -1,3 +1,10 @@
+/**
+ * Asynchronously includes HTML content into specified elements.
+ * @async
+ * @function includeHTML
+ * @returns {Promise<void>} - A Promise that resolves once HTML content is included.
+ * @throws {Error} - Throws an error if the fetch operation fails.
+ */
 async function includeHTML() {
         let includeElements = document.querySelectorAll('[w3-include-html]');
 
@@ -7,11 +14,10 @@ async function includeHTML() {
                 file = element.getAttribute("w3-include-html");
                 resp = await fetch(file);
 
-                if(resp.ok) {
+                if (resp.ok) {
                         element.innerHTML = await resp.text();
                 } else {
                         element.innerHTML = 'Page not found';
                 }
-                
         }
 }
