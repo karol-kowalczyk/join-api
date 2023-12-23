@@ -24,8 +24,12 @@ input[type=checkbox]:hover {
 
 #main-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     min-height: 15svh;
+}
+
+.d-none {
+    display: none !important;
 }
 
 #mid-section {
@@ -141,13 +145,16 @@ input[type=checkbox]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+    z-index: 998;
 }
 
 #sucessfully-signed-up {
     background-color: #2A3647;
     height: 74px;
     width: 312px;
-    margin-top: 160px;
+    margin-top: 80px;
     color: white;
     font-size: 20px;
     font-weight: 400;
@@ -155,6 +162,22 @@ input[type=checkbox]:hover {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+
+.opacityOne {
+    opacity: 1 !important;
+}
+
+.opacityZero {
+    opacity: 0.1;
+}
+
+.bg-grey {
+    background-color: rgb(129, 125, 125);
 }
 
 .big-logo-loaded {
