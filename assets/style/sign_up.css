@@ -80,7 +80,7 @@ input[type=checkbox]:hover {
     margin-bottom: 28px;
 }
 
-#name-field {
+#username {
     background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
     background-repeat: no-repeat;
     text-indent: 20px;
@@ -88,7 +88,7 @@ input[type=checkbox]:hover {
     cursor: pointer;
 }
 
-#email-field {
+#email {
     background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
     background-repeat: no-repeat;
     text-indent: 20px;
@@ -135,6 +135,26 @@ input[type=checkbox]:hover {
 #sign-up-div {
     display: flex;
     justify-content: center;
+}
+
+#sucessfully-signed-up-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sucessfully-signed-up {
+    background-color: #2A3647;
+    height: 74px;
+    width: 312px;
+    margin-top: 160px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
 }
 
 .big-logo-loaded {

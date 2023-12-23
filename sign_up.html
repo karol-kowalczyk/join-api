@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="/join-project-management-tool/assets/style/responsive/responsive_sign_up.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     
-    <script defer src="./assets/script/sign_up.js"></script>
+    <script defer src="./assets/script/register.js"></script>
     <script defer src="./assets/script/storage.js"></script>
+    <script defer src="./assets/script/sign_up.js"></script>
     <script defer src="./assets/"></script>
 
     <title>Join - Sign up</title>
@@ -36,19 +37,19 @@
                         <img src="" alt="">
                     </div>
                 </div>
-                <form onsubmit="" id="input-fields">
-                    <input id="name-field" class="login-fields" type="text" placeholder="Name" required>
-                    <input id="email-field" class="login-fields" type="email" placeholder="Email" required>
+                <form onsubmit="register(); return false;" id="input-fields">
+                    <input id="username" class="login-fields" type="text" placeholder="Name" required>
+                    <input id="email" class="login-fields" type="email" placeholder="Email" required>
                     <input onclick="seePassword()" id="password-field" class="login-fields" type="password" placeholder="Password" required>
                     <input onclick="seeConfirmedPassword()" id="password-field-confirm" class="login-fields" type="password" placeholder="Confirm Password"
                         required>
                     <label id="privacy-policy-checkbox">
-                        <input type="checkbox" placeholder="Password">
+                        <input type="checkbox" placeholder="Password" required>
                         <p class="paragraphs cursor-pointer">I accept the <a class="privacy-policy" target=”_blank”
                                 href="">Privacy policy</a></p>
                     </label>
                     <div id="sign-up-div">
-                        <button class="sign-up-btn">Sign up</button>
+                        <button onclick="checkPassword()" id="sign-up-btn" class="sign-up-btn">Sign up</button>
                     </div>
                 </form>
 
