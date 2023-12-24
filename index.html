@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/join-project-management-tool/assets/img/favicon.svg" type="image">
 
-
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/responsive/responsive_login.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
 
     <script defer src="./assets/script/storage.js"></script>
+    <script defer src="./assets/script/register.js"></script>
     <script defer src="./assets/script/script.js"></script>
     <script defer src="./assets/script/sign_up.js"></script>
-    <script defer src="./assets/script/register.js"></script>
 
     <title>Join - Login</title>
 </head>
 
-<body onload="registerBtn()">
+<body>
     <div id="content" class="dark">
         <img id="big-logo" class="big-logo big-logo-querry white-Logo" src="./assets/img/login-site/big-join-logo.svg"
             alt="">
@@ -35,11 +34,11 @@
                     <p id="login-paragraph">Log in</p>
                     <div id="blue-line"></div>
                 </div>
-                <form onsubmit="register(); return false;" id="input-fields">
+                <form onsubmit="login(); return false;" id="input-fields">
                     <input required id="email" class="login-fields" type="email" placeholder="Email">
                     <input required id="password" class="login-fields" type="password" placeholder="Password">
                     <label id="remember-checkbox">
-                        <input type="checkbox" placeholder="Password">
+                        <input type="checkbox" placeholder="Password" required>
                         <p class="paragraphs cursor-pointer">Remember me</p>
                     </label>
                     <div id="register-btns">

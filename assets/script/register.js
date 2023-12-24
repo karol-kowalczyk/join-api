@@ -4,12 +4,31 @@ let userName = document.getElementById('username');
 let eMail = document.getElementById('email');
 let setPassword = document.getElementById('password-field');
 let passwordConfirm = document.getElementById('password-field-confirm');
+let email = document.getElementById('email');
+let password = document.getElementById('password');
 let signedUpDiv = document.getElementById('sucessfully-signed-up-div');
 let midSection = document.getElementById('mid-section');
 let logo = document.getElementById('logo');
 let body = document.body;
 let links = document.getElementById('compliance-links-div');
 let midSec = document.getElementById('mid-section');
+
+
+/**
+ *When the page is loaded, the init function executes the functions within it.
+ * 
+ */
+async function init() {
+        loadUsers();
+}
+
+async function loadUsers() {
+        try {
+                users = JSON.parse(await getItem('users'));
+        } catch (e) {
+                console.error('Loading error:', e);
+        }
+}
 
 /**
  * This function is used to check if the passwords in the password fields are similar.
@@ -20,8 +39,6 @@ function checkPassword() {
         return setPassword.value === passwordConfirm.value;
 }
 
-let passwordMatch = checkPassword();
-
 /**
  * This async function checks if the entered passwords match, and if so, creates a new user object
  *  with provided name, email, and password, adds it to a users array, triggers a successful sign-up notification, 
@@ -30,6 +47,7 @@ let passwordMatch = checkPassword();
  * 
  */
 async function register() {
+        let passwordMatch = checkPassword();
         if (passwordMatch) {
                 let newUser = {
                         'name': userName.value,
@@ -39,17 +57,18 @@ async function register() {
 
                 users.push(newUser);
                 await signedUpSuccesfully();
-                resetForm();
                 setTimeout(() => {
                         openIndexHTML();
                 }, 5000);
+                await setItem('users', JSON.stringify(users));
+                resetForm();
         } else {
                 alert('Password do not match.');
         }
 }
 
 /**
- * This function reset the form element.
+ * This function reset the form elements.
  * 
  * 
  */
@@ -82,6 +101,20 @@ async function signedUpSuccesfully() {
  * 
  */
 function openIndexHTML() {
-        window.location = '/join-project-management-tool/index.html';
+        window.location.href = '/join-project-management-tool/index.html';
 }
 
+/**
+ * This function logged in a User
+ * 
+ */
+
+function login() {
+        let user = users.find( u => u.email == email.value && u.password == password.value);
+        console.log(user);
+        if(user) {
+                alert('user gefunden');
+        } else {
+                alert ('user not found');
+        }
+}
