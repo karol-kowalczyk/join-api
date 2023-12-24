@@ -52,16 +52,16 @@ function restorePwImgScnd() {
 * EventListener activates the function replaceIcon() if the user inputs something in our input field 'input'
 */
 
-password.addEventListener('input', replaceIcon);
-passwordConfirm.addEventListener('input', replaceIconScnd);
+// password.addEventListener('input', replaceIcon);
+// passwordConfirm.addEventListener('input', replaceIconScnd);
 
 /**
  *
  * The event listener activates the function restorePwImg() when the field is no longer clicked and loses focus, or in other words, when it experiences a 'blur'
  */
 
-password.addEventListener('blur', restorePwImg);
-password.addEventListener('blur', restorePwImgScnd);
+// password.addEventListener('blur', restorePwImg);
+// password.addEventListener('blur', restorePwImgScnd);
 
 /**
  * 
@@ -77,13 +77,13 @@ function seeConfirmedPassword() {
 }
 
 
-if (password.value == '') {
-        password.onclick = false;
-} 
+// if (password.value == '') {
+//         password.onclick = false;
+// } 
 
-if (password.value !== '') {
-        password.onclick = true;
-} 
+// if (password.value !== '') {
+//         password.onclick = true;
+// } 
 
 
 // if (passwordConfirm.value == '') {

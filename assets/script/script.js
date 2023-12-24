@@ -32,14 +32,14 @@ function restoreEmailImg() {
 * EventListener activates the function removeEmailImg() if the user inputs something in our input field 'input'
 */
 
-emailField.addEventListener('input', removeEmailImg);
+// emailField.addEventListener('input', removeEmailImg);
 
 /**
  *
  * The event listener activates the function restoreEmailImg() when the field is no longer clicked and loses focus, or in other words, when it experiences a 'blur'
  */
 
-emailField.addEventListener('blur', restoreEmailImg);
+// emailField.addEventListener('blur', restoreEmailImg);
 
 /**
  * 
@@ -75,14 +75,14 @@ function restorePasswordImg() {
  * The event listener activates the function restorePasswordImg when the field is no longer clicked and loses focus, or in other words, when it experiences a 'blur'
  */
 
-passwordField.addEventListener('input', removePasswordImg);
+// passwordField.addEventListener('input', removePasswordImg);
 
 /**
  * 
  * This function removes the background image from the input field when the user enters text
  */
 
-passwordField.addEventListener('blur', restorePasswordImg);
+// passwordField.addEventListener('blur', restorePasswordImg);
 
 joinLogo = document.getElementById('big-logo');
 
@@ -120,6 +120,10 @@ function loadSignUp() {
         window.location = '/join-project-management-tool/sign_up.html';
 }
 
-function loadGuestLogin() {
-        window.location = '/join-project-management-tool/board.html';
+async function loadGuestLogin() {
+        await fetch(window.location = '/join-project-management-tool/summary.html');
+        let initials = document.getElementById('initials');
+
+        initials.innerHTML = 'G';
+        console.log(initials);
 }
