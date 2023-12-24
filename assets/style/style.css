@@ -75,7 +75,7 @@ input[type=checkbox]:hover {
         margin-bottom: 28px;
 }
 
-#email {
+#email-address {
         background-image: url(/join-project-management-tool/assets/img/login-site/mail.svg);
         background-repeat: no-repeat;
         text-indent: 20px;
@@ -105,7 +105,7 @@ input[type=checkbox]:hover {
         margin-bottom: 36px;
 }
 
-#email:fokus {
+#email-address:fokus {
         background-image: none;
 }
 

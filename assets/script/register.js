@@ -4,7 +4,6 @@ let userName = document.getElementById('username');
 let eMail = document.getElementById('email');
 let setPassword = document.getElementById('password-field');
 let passwordConfirm = document.getElementById('password-field-confirm');
-let email = document.getElementById('email');
 let password = document.getElementById('password');
 let signedUpDiv = document.getElementById('sucessfully-signed-up-div');
 let midSection = document.getElementById('mid-section');
@@ -105,12 +104,12 @@ function openIndexHTML() {
 }
 
 /**
- * This function logged in a User
+ * This function logged a user in our join
  * 
  */
 
 function login() {
-        let user = users.find( u => u.email == email.value && u.password == password.value);
+        let user = users.find( u => u.email == email-address.value && u.password-field == password.value);
         console.log(user);
         if(user) {
                 alert('user gefunden');

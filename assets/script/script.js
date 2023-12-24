@@ -3,7 +3,7 @@
  * This global variable detects the input field with the id 'email-field'
  */
 
-emailField = document.getElementById('email');
+emailField = document.getElementById('email-address');
 
 /**
  * 
