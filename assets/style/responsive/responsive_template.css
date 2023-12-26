@@ -49,6 +49,10 @@
                 position: fixed;
         }
 
+        #question-mark {
+                display: none;
+        }
+
         .menu-points {
                 display: flex;
                 flex-direction: column;

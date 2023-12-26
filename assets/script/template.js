@@ -24,5 +24,5 @@ async function includeHTML() {
 function openDropdownMenu() {
         let menu = document.getElementById('popUpMenuDiv');
 
-        menu.classList.remove('d-none');
+        menu.classList.toggle('d-none');
 }
