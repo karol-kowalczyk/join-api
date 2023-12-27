@@ -120,10 +120,6 @@ function loadSignUp() {
         window.location = '/join-project-management-tool/sign_up.html';
 }
 
-async function loadGuestLogin() {
-        await fetch(window.location = '/join-project-management-tool/summary.html');
-        let initials = document.getElementById('initials');
-
-        initials.innerHTML = 'G';
-        console.log(initials);
+function loadGuestLogin() {
+        window.location = '/join-project-management-tool/summary.html';
 }
