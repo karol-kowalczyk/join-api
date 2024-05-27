@@ -122,4 +122,7 @@ function loadSignUp() {
 
 function loadGuestLogin() {
         window.location = '/join-project-management-tool/summary.html';
+        let initials = document.getElementById('initials');
+
+        initials.innerHTML = 'G';
 }
