@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="assets/style/responsive/responsive_login.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
 
-    <script defer src="./assets/script/storage.js"></script>
-    <script defer src="./assets/script/register.js"></script>
+    <script type="module" defer src="./assets/script/storage.js"></script>
+    <script type="module" defer src="./assets/script/register.js"></script>
     <script defer src="./assets/script/script.js"></script>
     <script defer src="./assets/script/sign_up.js"></script>
     <script defer src="./assets/script/summary.js"></script>
@@ -44,7 +44,7 @@
                         <p class="paragraphs cursor-pointer">Remember me</p>
                     </label>
                     <div id="register-btns">
-                        <button class="log-in-btn" id="registerBtn">Log in</button>
+                        <button onclick="loginWorks(event)" class="log-in-btn" id="registerBtn">Log in</button>
                         <a onclick="loadGuestLogin()" id="guest-login-btn"><span>Guest Login</span></a>
                     </div>
                 </form>

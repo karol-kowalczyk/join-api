@@ -1,27 +1,58 @@
-const STORAGE_TOKEN = '7I3GVB4FSQIZUZFO7U18ACMHMX7UZAKX2PIW985';
-const STORAGE_URL = 'https://remote-storage.developerakademie.org/item';
+const STORAGE_URL =
+  "https://joinapi-98d95-default-rtdb.europe-west1.firebasedatabase.app/";
 
-/**
- * This function send users information to the local storage.
- * @param {string} key - The key of the item to be set like e.g., name, username, email etc.
- * @param {any} value - This is the value of the key.
- * @returns {Promise} -  A Promise that resolves with the result of the storage operation.
- */
-async function setItem(key, value) {
-        const payload = { key, value, token: STORAGE_TOKEN };
-        return fetch(STORAGE_URL, { method: 'POST', body: JSON.stringify(payload) }).then(res => res.json());
+// get data from the remote server
+async function loadData() {
+  let response = await fetch(STORAGE_URL + ".json");
+  return (responseToJson = await response.json());
 }
 
-/**
- * Retrieves information from local storage based on the provided key.
- * @param {string} key - The key for which information was previously stored by the user.
- * @returns {Promise} - A Promise that resolves with the retrieved information.
- */
-async function getItem(key) {
-        const url = `${STORAGE_URL}?key=${key}&token=${STORAGE_TOKEN}`;
-        return fetch(url).then(res => res.json()).then(res => {
-                if (res.data) {
-                        return res.data.value;
-                } throw `Could not find data with key "${key}".`;
-        });
+// 'post' send data to the remote server
+async function postData(path = "", data = {}) {
+  let response = await fetch(STORAGE_URL + path + ".json", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+  return (responseToJson = await response.json());
 }
+
+// delete data from the remote server
+async function deleteData() {
+  let response = await fetch(STORAGE_URL + ".json", {
+    method: "DELETE",
+  });
+  return (responseToJson = await response.json());
+}
+
+// save data to the remote server
+async function setItem(key, data) {
+  let response = await fetch(`${STORAGE_URL}/${key}.json`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+  return (responseToJson = await response.json());
+}
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDkWM6OYRQRTizP9amnTFy8YRpoR9TV5xE",
+  authDomain: "join-api-9528e.firebaseapp.com",
+  projectId: "join-api-9528e",
+  storageBucket: "join-api-9528e.appspot.com",
+  messagingSenderId: "21220935744",
+  appId: "1:21220935744:web:afef606481dfd04f2937a5",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
