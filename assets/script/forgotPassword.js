@@ -1,6 +1,4 @@
-// firebaseauth.js
-
-// Import the functions you need from the SDKs you need
+// Import Firebase functions
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getAuth,
@@ -11,11 +9,8 @@ import {
 import {
   getFirestore,
   setDoc,
-  doc,
+  doc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-
-
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -29,9 +24,15 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
+// Function to show messages
 function showMessage(message, divId) {
   let messageDiv = document.getElementById(divId);
+  if (!messageDiv) {
+    console.error(`Element with id "${divId}" not found.`);
+    return;
+  }
   messageDiv.style.display = "block";
   messageDiv.innerHTML = message;
   messageDiv.style.opacity = 1;
@@ -40,16 +41,35 @@ function showMessage(message, divId) {
   }, 5000);
 }
 
+// Forgot Password functionality
+let forgotPassword = document.getElementById("forgotPassword");
+let emailInput = document.getElementById("resetEmail");
 
+let ForgotPassword = () => {
+  let email = emailInput.value;
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      showMessage('If this email is in our database, a reset link has been sent.', 'signInMessage');
+    })
+    .catch((error) => {
+      console.log(error.code);
+      console.log(error.message);
+      showMessage(error.message, 'signInMessage');
+    });
+}
+
+forgotPassword.addEventListener('click', ForgotPassword);
+
+// Sign-In functionality
 const signIn = document.getElementById("submitSignIn");
 signIn.addEventListener("click", (event) => {
   event.preventDefault();
   const email = document.getElementById("emailAddress").value;
   const password = document.getElementById("password").value;
-  const auth = getAuth();
+
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      showMessage("login is successful", "signInMessage");
+      showMessage("Login is successful", "signInMessage");
       const user = userCredential.user;
       localStorage.setItem("loggedInUserId", user.uid);
       window.location.href = "summary.html";
@@ -66,5 +86,3 @@ signIn.addEventListener("click", (event) => {
       }
     });
 });
-
-

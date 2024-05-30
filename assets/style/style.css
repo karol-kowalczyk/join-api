@@ -101,8 +101,6 @@ input[type="checkbox"]:hover {
 #remember-checkbox {
   display: flex;
   gap: 4px;
-  margin-top: 24px;
-  margin-bottom: 36px;
 }
 
 #emailAddress:fokus {
@@ -244,7 +242,6 @@ input[type="checkbox"]:hover {
   background-color: var(--background-dark);
   color: var(--background-white);
   border: none;
-  padding: 4px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,4 +250,10 @@ input[type="checkbox"]:hover {
   color: white;
   opacity: 0.8;
   border-radius: 8px;
+  width: 620px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  padding: 0;
 }
