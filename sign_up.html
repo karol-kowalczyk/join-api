@@ -10,24 +10,23 @@
     <link rel="stylesheet" href="/join-project-management-tool/assets/style/responsive/responsive_sign_up.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
 
-    <script defer src="./assets/script/login.js"></script>
-    <script defer src="./assets/script/register.js"></script>
-    <script type="module" defer src="./assets/script/storage.js"></script>
     <script defer src="./assets/script/sign_up.js"></script>
+    <script defer src="./assets/script/script.js"></script>
+    <script defer src="./assets/script/login.js"></script>
+    <script type="module" defer src="./assets/script/storage.js"></script>
+
 
 
     <title>Join - Sign up</title>
 </head>
 
-<body onload="init()">
+<body>
     <div id="content">
         <img id="logo" class="big-logo-loaded transition"
             src="/join-project-management-tool/assets/img/login-site/join-logo-top-left.svg" alt="">
         <div id="main-header">
-            <div id="sucessfully-signed-up-div" class="d-none">
-                <btn onclick="openIndexHTML()" id="sucessfully-signed-up">Success! Click to continue.</btn>
-            </div>
         </div>
+        <div id="signUpMessage" class="message-div" style="display: none"></div>
         <div id="mid-section">
             <div id="sign-up-section">
                 <div id="sign-up-arrow-div">
@@ -41,12 +40,12 @@
                         <img src="" alt="">
                     </div>
                 </div>
-                <form onsubmit="register(); return false;" id="input-fields">
-                    <input id="username" class="login-fields" type="text" placeholder="Name" minlength="3" maxlength="20" required>
-                    <input id="email" class="login-fields" type="email" placeholder="Email" required>
-                    <input onclick="seePassword()" id="password-field" class="login-fields" type="password"
+                <form method="post" id="input-fields">
+                    <input id="fName" class="login-fields" type="text" placeholder="Name" minlength="3" maxlength="20" required>
+                    <input id="rEmail" class="login-fields" type="email" placeholder="Email" required>
+                    <input id="rPassword" class="login-fields" type="password"
                         placeholder="Password" required>
-                    <input onclick="seeConfirmedPassword()" id="password-field-confirm" class="login-fields"
+                    <input id="password-field-confirm" class="login-fields"
                         type="password" placeholder="Confirm Password" required>
                     <label id="privacy-policy-checkbox">
                         <input type="checkbox" placeholder="Password" required>
@@ -54,11 +53,12 @@
                                 href="">Privacy policy</a></p>
                     </label>
                     <div id="sign-up-div">
-                        <button onclick="checkPassword()" id="sign-up-btn" class="sign-up-btn">Sign up</button>
+                        <button onsubmit id="submitSignUp" class="sign-up-btn">Sign up</button>
                     </div>
                 </form>
             </div>
         </div>
+        <div id="signInMessage" class="message-div" style="display: none"></div>
         <div id="responsive-sign-up" class="d-none">
             <p class="paragraphs">Not a Join user?</p>
             <button class="sign-up-btn">Sign up</button>

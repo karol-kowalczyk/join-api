@@ -1,208 +1,220 @@
 @media (max-width: 1100px) {
-        body {
-                overflow: auto;
-        }
+  body {
+    overflow: auto;
+  }
 
-        .big-logo-loaded {
-                transform: scale(0.6);
-                position: fixed;
-                top: 16px;
-                left: 44px;
-                transition: all 0.8s ease-out 0s;
-        }
+  .big-logo-loaded {
+    transform: scale(0.6);
+    position: fixed;
+    top: 16px;
+    left: 44px;
+    transition: all 0.8s ease-out 0s;
+  }
 
-        #privacy-policy-checkbox {
-                margin-bottom: 0;
-        }
+  #privacy-policy-checkbox {
+    margin-bottom: 0;
+  }
+}
 
+@media (max-width: 780px) {
+  .message-div {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 600px) {
-        #sign-up-section {
-                width: 460px;
-        }
+  #sign-up-section {
+    width: 460px;
+  }
+
+  .message-div {
+    padding: 20px 10px;
+    left: 58%;
+    top: 8%;
+    width: 180px;
+  }
 }
 
 @media (max-width: 480px) {
-        #sign-up-section {
-                width: 400px;
-        }
+  #sign-up-section {
+    width: 400px;
+  }
 
-        .login-fields {
-                width: 300px;
-        }
+  .login-fields {
+    width: 300px;
+  }
 }
 
 @media (max-width: 420px) {
-        #sign-up-section {
-                width: 300px;
-        }
+  #sign-up-section {
+    width: 300px;
+  }
 
-        .login-fields {
-                width: 240px;
-        }
+  .login-fields {
+    width: 240px;
+  }
 
-        #login-paragraph {
-                font-size: 48px;
-        }
+  #login-paragraph {
+    font-size: 48px;
+  }
 
-        .login-fields::placeholder {
-                color: #D1D1D1;
-                font-weight: 400;
-                font-size: 12px;
-        }
+  .login-fields::placeholder {
+    color: #d1d1d1;
+    font-weight: 400;
+    font-size: 12px;
+  }
 
-        #username {
-                background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
-                background-repeat: no-repeat;
-                text-indent: 20px;
-                background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
-        }
+  #username {
+    background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
+  }
 
-        #email {
-                background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
-                background-repeat: no-repeat;
-                text-indent: 20px;
-                background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
-        }
+  #email {
+    background-image: url(/join-project-management-tool/assets/img/login-site/person.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
+  }
 
-        #password {
-                background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
-                background-repeat: no-repeat;
-                text-indent: 20px;
-                background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
-                cursor: pointer;
-        }
+  #password {
+    background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
+    cursor: pointer;
+  }
 
-        #password-field-confirm {
-                background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
-                background-repeat: no-repeat;
-                text-indent: 20px;
-                background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
-                cursor: pointer;
-        }
+  #password-field-confirm {
+    background-image: url(/join-project-management-tool/assets/img/login-site/lock.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position: clamp(11.25rem, -0.179rem + 57.14vw, 210px);
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 375px) and (max-height: 667px) {
-        .big-logo-loaded {
-                transform: scale(0.51);
-                position: absolute;
-                top: 0px;
-                left: 44px;
-                transition: all 0.8s ease-out 0s;
-        }
+  .big-logo-loaded {
+    transform: scale(0.51);
+    position: absolute;
+    top: 0px;
+    left: 44px;
+    transition: all 0.8s ease-out 0s;
+  }
 
-        #main-header {
-                min-height: 19svh;
-        }
+  #main-header {
+    min-height: 19svh;
+  }
 
-        #mid-section {
-                height: auto;
-                margin-bottom: 32px;
-        }
+  #mid-section {
+    height: auto;
+    margin-bottom: 32px;
+  }
 
-        #sign-up-section {
-                padding-bottom: 16px;
-        }
+  #sign-up-section {
+    padding-bottom: 16px;
+  }
 
-        #compliance-links-div {
-                padding-bottom: 16px;
-        }
+  #compliance-links-div {
+    padding-bottom: 16px;
+  }
 }
 
 @media (max-width: 360px) and (max-height: 740px) {
-        .big-logo-loaded {
-                transform: scale(0.6);
-                position: absolute;
-                top: 8px;
-                left: 44px;
-                transition: all 0.8s ease-out 0s;
-        }
+  .big-logo-loaded {
+    transform: scale(0.6);
+    position: absolute;
+    top: 8px;
+    left: 44px;
+    transition: all 0.8s ease-out 0s;
+  }
 
-        #main-header {
-                display: flex;
-                justify-content: flex-end;
-                min-height: 17svh;
-        }
+  #main-header {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 17svh;
+  }
 
-        #mid-section {
-                height: auto;
-        }
+  #mid-section {
+    height: auto;
+  }
 
-        #sign-up-section {
-                padding-bottom: 16px;
-                margin-bottom: 32px;
-        }
+  #sign-up-section {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
 
-        #sign-up-section {
-                margin-bottom: 16px;
-        }
+  #sign-up-section {
+    margin-bottom: 16px;
+  }
 }
 
 @media (width: 540px) and (height: 720px) {
-        #main-header {
-                display: flex;
-                justify-content: flex-end;
-                min-height: 19svh;
-        }
+  #main-header {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 19svh;
+  }
 
-        #mid-section {
-                height: auto;
-                margin-bottom: 32px;
-        }
+  #mid-section {
+    height: auto;
+    margin-bottom: 32px;
+  }
 
-        #sign-up-section {
-                padding-bottom: 16px;
-                margin-bottom: 32px;
-        }
+  #sign-up-section {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
 
-        #sign-up-section {
-                margin-bottom: 16px;
-        }
+  #sign-up-section {
+    margin-bottom: 16px;
+  }
 
-        #compliance-links-div {
-                margin-bottom: 32px;
-        }
+  #compliance-links-div {
+    margin-bottom: 32px;
+  }
 
-        .big-logo-loaded {
-                transform: scale(0.6);
-                position: absolute;
-                top: 8px;
-                left: 44px;
-                transition: all 0.8s ease-out 0s;
-        }
+  .big-logo-loaded {
+    transform: scale(0.6);
+    position: absolute;
+    top: 8px;
+    left: 44px;
+    transition: all 0.8s ease-out 0s;
+  }
 }
 
 @media (max-height: 783px) {
-        #main-header {
-                display: flex;
-                justify-content: flex-end;
-                min-height: 18svh;
-        }
+  #main-header {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 18svh;
+  }
 
-        #mid-section {
-                height: auto;
-                margin-bottom: 32px;
-        }
+  #mid-section {
+    height: auto;
+    margin-bottom: 32px;
+  }
 
-        #sign-up-section {
-                padding-bottom: 16px;
-                margin-bottom: 32px;
-        }
+  #sign-up-section {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
 
-        #sign-up-section {
-                margin-bottom: 16px;
-        }
+  #sign-up-section {
+    margin-bottom: 16px;
+  }
 
-        #compliance-links-div {
-                margin-bottom: 32px;
-        }
+  #compliance-links-div {
+    margin-bottom: 32px;
+  }
 
-        .big-logo-loaded {
-                transform: scale(0.6);
-                position: absolute;
-                top: 8px;
-                left: 44px;
-                transition: all 0.8s ease-out 0s;
-        }
+  .big-logo-loaded {
+    transform: scale(0.6);
+    position: absolute;
+    top: 8px;
+    left: 44px;
+    transition: all 0.8s ease-out 0s;
+  }
 }

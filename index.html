@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/responsive/responsive_login.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/style/">
 
     <script type="module" defer src="./assets/script/storage.js"></script>
-    <script type="module" defer src="./assets/script/register.js"></script>
+    <script type="module" defer src="./assets/script/login.js"></script>
     <script defer src="./assets/script/script.js"></script>
-    <script defer src="./assets/script/sign_up.js"></script>
     <script defer src="./assets/script/summary.js"></script>
     <script defer src="./assets/script/template.js"></script>
+
 
     <title>Join - Login</title>
 </head>
@@ -30,27 +31,29 @@
                 <button class="sign-up-btn" onclick="loadSignUp()">Sign up</button>
             </div>
         </div>
+        <div id="signUpMessage" class="message-div" style="display: none"></div>
         <div id="mid-section" class="opacity-zero">
             <div id="login-section">
                 <div id="login-header">
                     <p id="login-paragraph">Log in</p>
                     <div id="blue-line"></div>
                 </div>
-                <form onsubmit="login(); return false;" id="input-fields">
-                    <input required id="email-address" class="login-fields" type="email" placeholder="Email">
+                <form method="post" id="input-fields">
+                    <input required id="emailAddress" class="login-fields" type="email" placeholder="Email">
                     <input required id="password" class="login-fields" type="password" placeholder="Password">
                     <label id="remember-checkbox">
-                        <input type="checkbox" placeholder="Password" required>
+                        <input type="checkbox" placeholder="Password">
                         <p class="paragraphs cursor-pointer">Remember me</p>
                     </label>
                     <div id="register-btns">
-                        <button onclick="loginWorks(event)" class="log-in-btn" id="registerBtn">Log in</button>
+                        <button class="log-in-btn" id="submitSignIn">Log in</button>
                         <a onclick="loadGuestLogin()" id="guest-login-btn"><span>Guest Login</span></a>
                     </div>
                 </form>
 
             </div>
         </div>
+        <div id="signInMessage" class="message-div" style="display: none"></div>
         <div id="responsive-sign-up" class="d-none opacity-zero">
             <p class="paragraphs">Not a Join user?</p>
             <button onclick="loadSignUp()" class="sign-up-btn">Sign up</button>
