@@ -37,7 +37,7 @@ function showMessage(message, divId) {
   messageDiv.style.opacity = 1;
   setTimeout(() => {
     messageDiv.style.opacity = 0;
-  }, 5000);
+  }, 2000);
 }
 
 
@@ -52,7 +52,10 @@ signIn.addEventListener("click", (event) => {
       showMessage("login is successful", "signInMessage");
       const user = userCredential.user;
       localStorage.setItem("loggedInUserId", user.uid);
-      window.location.href = "summary.html";
+      setTimeout(() => {
+        window.location.href = "summary.html";
+      }, 2000);
+      
     })
     .catch((error) => {
       const errorCode = error.code;

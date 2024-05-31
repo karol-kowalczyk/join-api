@@ -22,7 +22,7 @@
 
 <body>
     <div id="content" class="dark">
-        <img id="big-logo" class="big-logo big-logo-querry white-Logo" src="./assets/img/login-site/big-join-logo.svg"
+        <img onclick="loadLogIn()" id="big-logo" class="big-logo big-logo-querry white-Logo" src="./assets/img/login-site/big-join-logo.svg"
             alt="">
         <div id="main-header" class="opacity-zero">
             <div id="sign-up-section">
@@ -42,11 +42,11 @@
                     <input required id="password" class="login-fields" type="password" placeholder="Password">
                     <a href="./forgotPassword.html">Forgot your password?</a>
                     <label id="remember-checkbox">
-                        <input type="checkbox" placeholder="Password">
+                        <input type="checkbox" id="rememberMe" placeholder="Password">
                         <p class="paragraphs cursor-pointer">Remember me</p>
                     </label>
                     <div id="register-btns">
-                        <button class="log-in-btn" id="submitSignIn">Log in</button>
+                        <button onclick="lsRememberMe()" class="log-in-btn" id="submitSignIn">Log in</button>
                         <a onclick="loadGuestLogin()" id="guest-login-btn"><span>Guest Login</span></a>
                     </div>
                 </form>

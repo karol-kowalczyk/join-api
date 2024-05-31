@@ -183,6 +183,7 @@ input[type="checkbox"]:hover {
   position: absolute;
   top: 32px;
   left: 68px;
+  cursor: pointer;
 }
 
 .cursor-pointer {

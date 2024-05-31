@@ -52,9 +52,9 @@ let ForgotPassword = () => {
       showMessage('If this email is in our database, a reset link has been sent.', 'signInMessage');
     })
     .catch((error) => {
-      console.log(error.code);
-      console.log(error.message);
-      showMessage(error.message, 'signInMessage');
+      // console.log(error.code);
+      // console.log(error.message);
+      showMessage('missing or invalid mail', 'signInMessage');
     });
 }
 
@@ -86,3 +86,5 @@ signIn.addEventListener("click", (event) => {
       }
     });
 });
+
+

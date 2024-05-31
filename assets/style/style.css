@@ -162,6 +162,10 @@ input[type="checkbox"]:hover {
   transition: all 1s ease-out 0s;
 }
 
+img {
+  cursor: pointer;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
