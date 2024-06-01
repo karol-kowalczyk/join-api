@@ -37,7 +37,7 @@ function showMessage(message, divId) {
   messageDiv.style.opacity = 1;
   setTimeout(() => {
     messageDiv.style.opacity = 0;
-  }, 2000);
+  }, 2100);
 }
 
 
