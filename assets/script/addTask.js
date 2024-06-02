@@ -29,19 +29,23 @@ function toggleButtonState(buttonId) {
   }
 }
 
+const titleInput = document.querySelector('.input-fields[type="text"]');
+const descriptionTextarea = document.querySelector("textarea");
+const assignedToInput = document.getElementById("contacts-dropdown");
+const tasksDropdown = document.getElementById("tasks-dropdown");
+const dueDateInput = document.getElementById("date");
+const prioButtons = document.querySelectorAll(".prio-button");
+const addSubtask = document.getElementById("addSubtask");
+
 function clearAllEntries() {
-  const titleInput = document.querySelector('.input-fields[type="text"]');
-  const descriptionTextarea = document.querySelector("textarea");
-  const assignedToInput = document.getElementById("contacts-dropdown");
-  const dueDateInput = document.getElementById("date");
-  const prioButtons = document.querySelectorAll(".prio-button");
-  const addSubtask = document.getElementById("addSubtask");
+
   deleteAllInputFields(
     titleInput,
     descriptionTextarea,
     assignedToInput,
     dueDateInput,
-    addSubtask
+    addSubtask,
+    tasksDropdown
   );
   resetAllBtns(prioButtons);
 }
@@ -58,13 +62,15 @@ function deleteAllInputFields(
   descriptionTextarea,
   assignedToInput,
   dueDateInput,
-  addSubtask
+  addSubtask,
+  tasksDropdown
 ) {
   titleInput.value = "";
   descriptionTextarea.value = "";
   assignedToInput.value = "";
   dueDateInput.value = "";
   addSubtask.value = "";
+  tasksDropdown.value = "";
 }
 
 function showMessage(isEmpty) {
@@ -75,6 +81,14 @@ function showMessage(isEmpty) {
     } else {
       messageDiv.textContent = 'Task is successfully created.';
       messageDiv.style.position = 'fixed';
+      deleteAllInputFields(
+        titleInput,
+        descriptionTextarea,
+        assignedToInput,
+        dueDateInput,
+        addSubtask,
+        tasksDropdown
+      );
     }
     messageDiv.style.opacity = 1;
     setTimeout(() => {
