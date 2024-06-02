@@ -21,6 +21,7 @@ async function includeHTML() {
                 }
         }
 }
+
 function openDropdownMenu() {
         let menu = document.getElementById('popUpMenuDiv');
 

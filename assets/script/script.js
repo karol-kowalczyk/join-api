@@ -43,6 +43,10 @@ function loadGuestLogin() {
   initials.innerHTML = "G";
 }
 
+function goBack() {
+  window.history.back();
+}
+
 /**
  *
  * This function redirects the user to the login page
