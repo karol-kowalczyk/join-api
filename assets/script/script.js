@@ -100,3 +100,7 @@ function updateCurrentDate() {
 function loadHelpSite() {
   window.location.href = "help.html";
 }
+
+function stopPropagationFunction(event) {
+  event.stopPropagation();
+}

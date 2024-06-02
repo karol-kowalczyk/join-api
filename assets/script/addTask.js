@@ -106,6 +106,11 @@ function showMessage(isEmpty) {
       }
     });
   
+    const dateField = document.getElementById("date");
+    if (dateField && dateField.value === "") {
+      isEmpty = true;
+    }
+  
     showMessage(isEmpty);
   }
   
