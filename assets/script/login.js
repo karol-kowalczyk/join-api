@@ -70,4 +70,6 @@ signIn.addEventListener("click", (event) => {
     });
 });
 
-
+function loadLogIn() {
+  window.location = "index.html";
+}
