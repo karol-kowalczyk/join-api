@@ -168,6 +168,11 @@ textarea::placeholder {
         border-radius: 10px;
 }
 
+.prio-button {
+        background-color: #ffffff;
+
+}
+
 #clear-btn {
         height: 56px;
         width: 110px;

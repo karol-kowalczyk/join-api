@@ -14,6 +14,7 @@
 
         <script defer src="./assets/script/storage.js"></script>
         <script defer src="./assets/script/template.js"></script>
+        <script defer src="./assets/script/addTask.js"></script>
         <script type="module" defer src="./assets/script/summary.js"></script> 
         <title>Join - Add Task</title>
 </head>
@@ -53,11 +54,10 @@
 
                         <div class="title">Prio</div>
                         <div id="prioritize">
-                                <button id="urgent">Urgent <img class="prio-icons" src="./assets/img/add_task/urgent.svg"
-                                                alt="urgent"></button>
-                                <button id="medium">Medium <img class="prio-icons" src="./assets/img/add_task/medium.svg"
-                                                alt="medium"></button>
-                                <button id="low">Low <img class="prio-icons" src="./assets/img/add_task/low.svg" alt="low"></button>
+                                <button id="urgent" class="prio-button" onclick="toggleButtonState('urgent')">Urgent <img class="prio-icons" src="./assets/img/add_task/urgent.svg" alt="urgent"></button>
+                                <button id="medium" class="prio-button" onclick="toggleButtonState('medium')">Medium <img class="prio-icons" src="./assets/img/add_task/medium.svg" alt="medium"></button>
+                                <button id="low" class="prio-button" onclick="toggleButtonState('low')">Low <img class="prio-icons" src="./assets/img/add_task/low.svg" alt="low"></button>
+                                
                         </div>
                         <div class="title">Category</div>
                         <input id="tasks-dropdown" class="input-fields" type="text" placeholder="Select task category">
