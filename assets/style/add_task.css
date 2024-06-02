@@ -133,24 +133,6 @@ textarea::placeholder {
         box-shadow: 2px 4px 4px 2px #0000001A;
 }
 
-#urgent:focus {
-        background-color: #FF4910;
-        box-shadow: 2px 4px 4px 2px #0000001A;
-        color: #ffffff;
-}
-
-#medium:focus {
-        background-color: #FFA500;
-        box-shadow: 2px 4px 4px 2px #0000001A;
-        color: #ffffff;
-}
-
-#low:focus {
-        background-color: #7AE229;
-        box-shadow: 2px 4px 4px 2px #0000001A;
-        color: #ffffff;
-}
-
 #prioritize {
         display: flex;
         gap: 8px;
