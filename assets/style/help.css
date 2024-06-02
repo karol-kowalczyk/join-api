@@ -31,6 +31,10 @@
     margin-bottom: 24px;
 }
 
+.margin-bottom-twice {
+    margin-bottom: 48px;
+}
+
 .step-by-step-heading {
     font-weight: bold;
 }

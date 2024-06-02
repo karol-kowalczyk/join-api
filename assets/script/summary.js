@@ -34,6 +34,14 @@ function generateInitials(name) {
   }
 }
 
+// Function to adjust font size based on text length
+function adjustFontSize() {
+  const surenameNameDiv = document.getElementById("surename-name");
+  if (surenameNameDiv.innerText.length > 11) {
+    surenameNameDiv.style.fontSize = "32px";
+  }
+}
+
 // Authentication state observer
 onAuthStateChanged(auth, async (user) => {
   const surenameNameDiv = document.getElementById("surename-name");
@@ -60,6 +68,7 @@ onAuthStateChanged(auth, async (user) => {
 
       if (surenameNameDiv) {
         surenameNameDiv.innerText = firstName;
+        adjustFontSize(); // Adjust font size after setting text
       }
       if (initialsElement) {
         initialsElement.innerText = initials;
@@ -74,6 +83,3 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 });
-
-
-
