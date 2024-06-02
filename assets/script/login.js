@@ -15,8 +15,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 
-
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyD4jWYr5LaTmgKTXONq4kLQOvq1T7UjxlM",
@@ -40,7 +38,6 @@ function showMessage(message, divId) {
   }, 2100);
 }
 
-
 const signIn = document.getElementById("submitSignIn");
 signIn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -52,10 +49,10 @@ signIn.addEventListener("click", (event) => {
       showMessage("login is successful", "signInMessage");
       const user = userCredential.user;
       localStorage.setItem("loggedInUserId", user.uid);
+      localStorage.removeItem("guestUser");
       setTimeout(() => {
         window.location.href = "summary.html";
       }, 2000);
-      
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -73,3 +70,10 @@ signIn.addEventListener("click", (event) => {
 function loadLogIn() {
   window.location = "index.html";
 }
+
+function loadGuestLogin() {
+  localStorage.setItem("guestUser", "true");
+  window.location.href = "summary.html";
+}
+
+document.getElementById("guest-login-btn").addEventListener("click", loadGuestLogin);
