@@ -45,6 +45,7 @@
   justify-content: center;
   cursor: pointer;
   padding: 16px 0;
+  text-decoration: none;
 }
 
 .menu-points:hover {
@@ -57,7 +58,6 @@
   font-size: 16px !important;
   font-weight: 400 !important;
   color: #ffffff !important;
-  text-decoration: none;
 }
 
 .compliance-links-a {
@@ -156,4 +156,8 @@
 
 #question-mark:hover {
   cursor: pointer;
+}
+
+span {
+  text-decoration: none;
 }
