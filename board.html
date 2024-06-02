@@ -13,7 +13,6 @@
     <script defer src="./assets/script/board.js"></script>
     <script defer src="./assets/script/storage.js"></script>
     <script defer src="./assets/script/template.js"></script>
-    <script defer src="./assets/script/addTask.js"></script>
     <script defer src="./assets/script/script.js"></script>
     <script type="module" defer src="./assets/script/summary.js"></script> 
 
@@ -43,58 +42,48 @@
                         <div id="border-right"></div>
                     </div>
                 </label>
-                <button onclick="showTaskPopup()" id="add-task-btn">Add Task
-                    <img src="./assets/img/board/add.svg" alt="plus">
-                </button>
+<button onclick="showTaskPopup('todo-board')" id="add-task-btn">Add Task
+  <img src="./assets/img/board/add.svg" alt="plus">
+</button>
             </div>
         </div>
         <div id="main-section">
-            <div class="boards">
-                <div class="header-boards">
-                    <div class="board-title">To do</div>
-                    <img onclick="showTaskPopup()" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                </div>
-                <div class="no-task-div">
-                    No tasks To Do
-                </div>
-                <div id="taskContainer" class="task-container">
-                </div>
-            </div>
-            <div class="boards">
-                <div class="header-boards">
-                    <div class="board-title">In progress</div>
-                    <img onclick="showTaskPopup()"  class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                </div>
-                <div class="no-task-div">
-                    No tasks To Do
-                </div>
-                <div class="task-container">
-                        <div class="task-div">Test</div>
-                </div>
-            </div>
-            <div class="boards">
-                <div class="header-boards">
-                    <div class="board-title">Await feedback</div>
-                    <img onclick="showTaskPopup()" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                </div>
-                <div class="no-task-div">
-                    No tasks To Do
-                </div>
-                <div class="task-container">
-                </div>
-            </div>
-            <div class="boards">
-                <div class="header-boards">
-                    <div class="board-title">Done</div>
-                    <img onclick="showTaskPopup()" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                </div>
-                <div class="no-task-div">
-                    No tasks To Do
-                </div>
-                <div class="task-container">
-                    <div class="task-div">Test</div>
-                </div>
-            </div>
+                <div class="boards" id="todo-board">
+                        <div class="header-boards">
+                          <div class="board-title">To do</div>
+                          <img onclick="showTaskPopup('todo-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
+                        </div>
+                        <div class="no-task-div">No tasks To Do</div>
+                        <div class="task-container"></div>
+                      </div>
+                      
+                      <div class="boards" id="inprogress-board">
+                        <div class="header-boards">
+                          <div class="board-title">In progress</div>
+                          <img onclick="showTaskPopup('inprogress-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
+                        </div>
+                        <div class="no-task-div">No tasks To Do</div>
+                        <div class="task-container"></div>
+                      </div>
+                      
+                      <div class="boards" id="awaitfeedback-board">
+                        <div class="header-boards">
+                          <div class="board-title">Await feedback</div>
+                          <img onclick="showTaskPopup('awaitfeedback-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
+                        </div>
+                        <div class="no-task-div">No tasks To Do</div>
+                        <div class="task-container"><div class="task-div">Hausaufgaben erledigen</div></div>
+                      </div>
+                      
+                      <div class="boards" id="done-board">
+                        <div class="header-boards">
+                          <div class="board-title">Done</div>
+                          <img onclick="showTaskPopup('done-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
+                        </div>
+                        <div class="no-task-div">No tasks To Do</div>
+                        <div class="task-container"></div>
+                      </div>
+                      
         </div>
     </div>
     <div id="addTaskPopup" class="d-none" onclick="closeDetails()">

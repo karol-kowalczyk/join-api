@@ -1,11 +1,26 @@
+let targetBoardId = null;
+
 function closeDetails() {
-  addTaskPopup = document.getElementById("addTaskPopup");
+  let addTaskPopup = document.getElementById("addTaskPopup");
   addTaskPopup.classList.add("d-none");
+  document.body.style.overflow = "auto";
+  deleteAllInputFields(
+    document.getElementById("inputField"),
+    document.querySelector("textarea[name='description']"),
+    document.getElementById("contacts-dropdown"),
+    document.getElementById("date"),
+    document.getElementById("addSubtask"),
+    document.getElementById("tasks-dropdown"),
+    document.querySelectorAll(".prio-button")
+  );
+  resetAllBtns(document.querySelectorAll(".prio-button"));
 }
 
-function showTaskPopup() {
-  addTaskPopup = document.getElementById("addTaskPopup");
+function showTaskPopup(boardId = "todo-board") {
+  targetBoardId = boardId;
+  let addTaskPopup = document.getElementById("addTaskPopup");
   addTaskPopup.classList.remove("d-none");
+  document.body.style.overflow = "hidden";
 }
 
 function updateTaskVisibility() {
@@ -23,33 +38,23 @@ function updateTaskVisibility() {
   }
 }
 
-function closeDetails() {
-  addTaskPopup = document.getElementById("addTaskPopup");
-  addTaskPopup.classList.add("d-none");
-}
-
-function showTaskPopup() {
-  addTaskPopup = document.getElementById("addTaskPopup");
-  addTaskPopup.classList.remove("d-none");
-}
-
 function checkAllRequiredFields() {
-    const requiredFields = document.querySelectorAll(".required");
-    let isEmpty = false;
-  
-    requiredFields.forEach((field) => {
-      if (field.value === "") {
-        isEmpty = true;
-      }
-    });
-  
-    const dateField = document.getElementById("date");
-    if (dateField && dateField.value === "") {
+  const requiredFields = document.querySelectorAll(".required");
+  let isEmpty = false;
+
+  requiredFields.forEach((field) => {
+    if (field.value === "") {
       isEmpty = true;
     }
-  
-    showMessageDiv(isEmpty);
+  });
+
+  const dateField = document.getElementById("date");
+  if (dateField && dateField.value === "") {
+    isEmpty = true;
   }
+
+  showMessageDiv(isEmpty);
+}
 
 function showMessageDiv(isEmpty) {
   let messageDiv = document.getElementById("signUpMessage");
@@ -60,18 +65,18 @@ function showMessageDiv(isEmpty) {
     messageDiv.textContent = "Task is successfully created.";
     messageDiv.style.position = "fixed";
     setTimeout(() => {
-        showTaskInBoard();
-        deleteAllInputFields(
-          titleInput,
-          descriptionTextarea,
-          assignedToInput,
-          dueDateInput,
-          addSubtask,
-          tasksDropdown
-        );
-    }, 2000)
-
-
+      showTaskInBoard();
+      deleteAllInputFields(
+        document.getElementById("inputField"),
+        document.querySelector("textarea[name='description']"),
+        document.getElementById("contacts-dropdown"),
+        document.getElementById("date"),
+        document.getElementById("addSubtask"),
+        document.getElementById("tasks-dropdown"),
+        document.querySelectorAll(".prio-button")
+      );
+      resetAllBtns(document.querySelectorAll(".prio-button"));
+    }, 2000);
   }
   messageDiv.style.opacity = 1;
   setTimeout(() => {
@@ -80,10 +85,83 @@ function showMessageDiv(isEmpty) {
 }
 
 function showTaskInBoard() {
-    let taskContainer = document.getElementById('taskContainer');
-    let inputField = document.getElementById('inputField').value;
+  let taskContainer = document.querySelector(
+    `#${targetBoardId} .task-container`
+  );
+  let inputField = document.getElementById("inputField").value;
 
-    taskContainer.innerHTML += /*html*/ `<div class="task-div">${inputField}</div>`;
-    updateTaskVisibility();
-    closeDetails();
+  taskContainer.innerHTML += /*html*/ `<div class="task-div">${inputField}</div>`;
+  updateTaskVisibility();
+  closeDetails();
+}
+
+function stopPropagationFunction(event) {
+  event.stopPropagation();
+}
+
+function deleteAllInputFields(...fields) {
+  fields.forEach((field) => {
+    if (field) {
+      field.value = "";
+    }
+  });
+
+  const prioButtons = ["urgent", "medium", "low"];
+  prioButtons.forEach((buttonId) => {
+    const button = document.getElementById(buttonId);
+    if (button) {
+      button.classList.remove("active");
+    }
+  });
+}
+
+function toggleButtonState(buttonId) {
+  const button = document.getElementById(buttonId);
+
+  const buttons = document.querySelectorAll(".prio-button");
+  buttons.forEach((btn) => {
+    if (btn.id !== buttonId) {
+      btn.classList.remove("active");
+      btn.style.backgroundColor = "";
+    }
+  });
+
+  const isActive = button.classList.toggle("active");
+  if (isActive) {
+    switch (buttonId) {
+      case "urgent":
+        button.style.backgroundColor = "#FF8010"; // Orange
+        break;
+      case "medium":
+        button.style.backgroundColor = "#FFD900"; // Gelb
+        break;
+      case "low":
+        button.style.backgroundColor = "#29E267"; // Grün
+        break;
+      default:
+        break;
+    }
+  } else {
+    button.style.backgroundColor = "";
+  }
+}
+
+function resetAllBtns(prioButtons) {
+  prioButtons.forEach((button) => {
+    button.classList.remove("active");
+    button.style.backgroundColor = "";
+  });
+}
+
+function clearAllEntries() {
+  deleteAllInputFields(
+    document.getElementById("inputField"),
+    document.querySelector("textarea[name='description']"),
+    document.getElementById("contacts-dropdown"),
+    document.getElementById("date"),
+    document.getElementById("addSubtask"),
+    document.getElementById("tasks-dropdown"),
+    document.querySelectorAll(".prio-button")
+  );
+  resetAllBtns(document.querySelectorAll(".prio-button"));
 }
