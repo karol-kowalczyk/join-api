@@ -85,3 +85,14 @@ function lsRememberMe() {
     localStorage.password = "";
   }
 }
+
+// Function to update the date element with the current date
+function updateCurrentDate() {
+  const currentDate = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = currentDate.toLocaleDateString('en-US', options);
+  const dateElement = document.getElementById("date");
+  if (dateElement) {
+    dateElement.innerText = formattedDate;
+  }
+}
