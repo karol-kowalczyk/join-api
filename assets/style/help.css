@@ -38,3 +38,9 @@
 .step-by-step-heading {
     font-weight: bold;
 }
+
+#section-ending-heading {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
