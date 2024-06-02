@@ -96,3 +96,7 @@ function updateCurrentDate() {
     dateElement.innerText = formattedDate;
   }
 }
+
+function loadHelpSite() {
+  window.location.href = "help.html";
+}
