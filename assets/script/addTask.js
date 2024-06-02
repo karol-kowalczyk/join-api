@@ -38,7 +38,6 @@ const prioButtons = document.querySelectorAll(".prio-button");
 const addSubtask = document.getElementById("addSubtask");
 
 function clearAllEntries() {
-
   deleteAllInputFields(
     titleInput,
     descriptionTextarea,
@@ -74,44 +73,42 @@ function deleteAllInputFields(
 }
 
 function showMessage(isEmpty) {
-    let messageDiv = document.getElementById('signUpMessage');
-    if (isEmpty) {
-      messageDiv.textContent = 'Please fill in all required fields.';
-      messageDiv.style.position = 'fixed';
-    } else {
-      messageDiv.textContent = 'Task is successfully created.';
-      messageDiv.style.position = 'fixed';
-      deleteAllInputFields(
-        titleInput,
-        descriptionTextarea,
-        assignedToInput,
-        dueDateInput,
-        addSubtask,
-        tasksDropdown
-      );
-    }
-    messageDiv.style.opacity = 1;
-    setTimeout(() => {
-      messageDiv.style.opacity = 0;
-    }, 2100);
+  let messageDiv = document.getElementById("signUpMessage");
+  if (isEmpty) {
+    messageDiv.textContent = "Please fill in all required fields.";
+    messageDiv.style.position = "fixed";
+  } else {
+    messageDiv.textContent = "Task is successfully created.";
+    messageDiv.style.position = "fixed";
+    deleteAllInputFields(
+      titleInput,
+      descriptionTextarea,
+      assignedToInput,
+      dueDateInput,
+      addSubtask,
+      tasksDropdown
+    );
   }
-  
-  function checkRequiredFields() {
-    const requiredFields = document.querySelectorAll(".required");
-    let isEmpty = false;
-  
-    requiredFields.forEach((field) => {
-      if (field.value === "") {
-        isEmpty = true;
-      }
-    });
-  
-    const dateField = document.getElementById("date");
-    if (dateField && dateField.value === "") {
+  messageDiv.style.opacity = 1;
+  setTimeout(() => {
+    messageDiv.style.opacity = 0;
+  }, 2100);
+}
+
+function checkRequiredFields() {
+  const requiredFields = document.querySelectorAll(".required");
+  let isEmpty = false;
+
+  requiredFields.forEach((field) => {
+    if (field.value === "") {
       isEmpty = true;
     }
-  
-    showMessage(isEmpty);
-  }
-  
+  });
 
+  const dateField = document.getElementById("date");
+  if (dateField && dateField.value === "") {
+    isEmpty = true;
+  }
+
+  showMessage(isEmpty);
+}
