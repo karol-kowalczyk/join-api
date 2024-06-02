@@ -98,7 +98,6 @@ textarea::placeholder {
         padding-left: 16px;
         font-weight: 400;
         font-size: 20px;
-        color: #D1D1D1;
         cursor: pointer;
 }
 
@@ -189,7 +188,7 @@ textarea::placeholder {
         justify-content: flex-end;
 }
 
-#add-subtask {
+#addSubtask {
         cursor: pointer;
         background: url(/join-project-management-tool/assets/img/add_task/add.svg) no-repeat scroll 7px 7px;
         background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
