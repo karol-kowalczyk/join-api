@@ -30,10 +30,10 @@
         <h1>Add Task</h1>
         <div id="content">
                 <div class="left-side">
-
+                        <div id="signUpMessage" class="message-div">Please fill in all required fields.</div>
                         <div class="title">Title <div class="red-star">*</div>
                         </div>
-                        <input class="input-fields" type="text" placeholder="Enter a title">
+                        <input class="input-fields required" type="text" placeholder="Enter a title">
 
                         <div class="title">Description</div>
 
@@ -48,7 +48,7 @@
                 </div>
                 <div id="border"></div>
                 <div class="right-side">
-                        <div class="date">Due date <div class="red-star">*</div>
+                        <div class="date required">Due date <div class="red-star">*</div>
                         </div>
                         <input id="date" type="date">
 
@@ -71,7 +71,7 @@
                                         <div id="responsive-clear-create-btns">
                                                 <button onclick="clearAllEntries()" id="clear-btn">Clear <img src="./assets/img/add_task/x.svg"
                                                                 alt="delete"></button>
-                                                <button id="create-btn">Create Task <img
+                                                <button onclick="checkRequiredFields()" id="create-btn">Create Task <img
                                                                 src="./assets/img/add_task/check.svg"
                                                                 alt="check"></button>
                                         </div>
