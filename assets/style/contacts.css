@@ -10,7 +10,7 @@ body {
 }
 
 #content {
-  margin: 16px 144px 0px 240px;
+  margin: 2px 200px 0px 208px;
   display: flex;
   justify-content: space-between;
   height: calc(100vh - 16px); /* Passt die Höhe an, um den Inhalt zu füllen */

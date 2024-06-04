@@ -18,3 +18,38 @@
 
     }
 }
+
+@media (max-width: 900px) {
+    #content {
+        margin-top: 1px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .contact-list-item-email {
+        font-size: 14px;
+    }
+
+    #header-contacts {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 940px) {
+    .contact-list-item-email {
+        font-size: 12px;
+    }
+
+    .contact-list-item-name {
+        font-size: 14px;
+    }
+
+    .contact-list-icon {
+        margin: 8px;
+    }
+
+    #add-contact {
+        font-size: 14px;
+    }
+}
