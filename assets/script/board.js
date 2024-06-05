@@ -1,5 +1,13 @@
 let targetBoardId = null;
 
+// Counter für jede Board
+let todoCounter = 0;
+let inprogressCounter = 0;
+let awaitfeedbackCounter = 1;
+let doneCounter = 0;
+let taskInAllBoardsCounter = doneCounter + awaitfeedbackCounter + inprogressCounter + todoCounter;
+
+
 function closeDetails() {
     let addTaskPopup = document.getElementById("addTaskPopup");
     addTaskPopup.classList.add("d-none");
@@ -21,6 +29,7 @@ function showTaskPopup(boardId = "todo-board") {
     let addTaskPopup = document.getElementById("addTaskPopup");
     addTaskPopup.classList.remove("d-none");
     document.body.style.overflow = "hidden";
+    updateToDos();
 }
 
 function updateTaskVisibility() {
@@ -84,15 +93,7 @@ function showMessageDiv(isEmpty) {
     }, 2100);
 }
 
-function showTaskInBoard() {
-    let taskContainer = document.querySelector(
-        `#${targetBoardId} .task-container`
-    );
 
-    taskContainer.innerHTML += /*html*/ `<div class="task-div">${targetBoardId}</div>`;
-    updateTaskVisibility();
-    closeDetails();
-}
 
 function stopPropagationFunction(event) {
     event.stopPropagation();
@@ -165,8 +166,6 @@ function clearAllEntries() {
     resetAllBtns(document.querySelectorAll(".prio-button"));
 }
 
-
-
 function showTaskInformation() {
     document.body.style.overflow = "hidden";
     let taskDiv = document.getElementById('taskDiv');
@@ -231,3 +230,93 @@ function closeInformationTaskDetails() {
     taskInformationPopup.classList.add('d-none');
     document.body.style.overflow = "auto";
 }
+
+function incrementCounter(boardId) {
+    switch (boardId) {
+        case "todo-board":
+            todoCounter++;
+            break;
+        case "inprogress-board":
+            inprogressCounter++;
+            break;
+        case "awaitfeedback-board":
+            awaitfeedbackCounter++;
+            break;
+        case "done-board":
+            doneCounter++;
+            break;
+    }
+    console.log(`Counters -> Todo: ${todoCounter}, In Progress: ${inprogressCounter}, Awaiting Feedback: ${awaitfeedbackCounter}, Done: ${doneCounter}`);
+}
+
+function decrementCounter(boardId) {
+    switch (boardId) {
+        case "todo-board":
+            todoCounter--;
+            break;
+        case "inprogress-board":
+            inprogressCounter--;
+            break;
+        case "awaitfeedback-board":
+            awaitfeedbackCounter--;
+            break;
+        case "done-board":
+            doneCounter--;
+            break;
+    }
+    console.log(`Counters -> Todo: ${todoCounter}, In Progress: ${inprogressCounter}, Awaiting Feedback: ${awaitfeedbackCounter}, Done: ${doneCounter}`);
+}
+
+
+function updateToDos() {
+    let todoCounterHTML = document.getElementById('todoCounter');
+    todoCounterHTML.innerHTML = todoCounter;
+    let finishedtodoCounter = document.getElementById('finishedtodoCounter');
+    finishedtodoCounter.innerHTML = doneCounter;
+    let taskInAllBoardsCounterHTML = document.getElementById('taskInAllBoardsCounter')
+    taskInAllBoardsCounterHTML.innerHTML = taskInAllBoardsCounter;
+    let inprogressCounterHTML = document.getElementById('inprogressCounter');
+    inprogressCounterHTML.innerHTML = inprogressCounter;
+    let awaitfeedbackCounterHTML = document.getElementById('awaitfeedbackCounter');
+    awaitfeedbackCounterHTML.innerHTML = awaitfeedbackCounter;
+}
+
+let currentDraggedElement;
+let taskCounter = 0;
+
+function startDragging(taskCounter) {
+    currentDraggedElement = taskCounter;
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+
+function showTaskInBoard() {
+    let taskContainer = document.querySelector(
+        `#${targetBoardId} .task-container`
+    );
+
+    // Holen Sie sich den Wert des Titels aus dem Eingabefeld
+    let title = document.getElementById("inputField").value;
+
+    // Erstellen Sie eine eindeutige ID für das neue Div
+
+    // Fügen Sie das Div der Aufgabe mit dem Titel als Inhalt und der eindeutigen ID hinzu
+    taskContainer.innerHTML += `<div draggable="true" ondragstart="startDragging(${taskCounter})" class="task-div">${title}</div>`;
+
+    // Inkrementieren Sie den Zähler für die nächste Aufgabe
+    taskCounter++;
+
+    updateTaskVisibility();
+    incrementCounter(targetBoardId);
+    closeDetails();
+}
+

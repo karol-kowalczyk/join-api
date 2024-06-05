@@ -14,7 +14,7 @@
     <script defer src="./assets/script/storage.js"></script>
     <script defer src="./assets/script/template.js"></script>
     <script defer src="./assets/script/script.js"></script>
-    <script type="module" defer src="./assets/script/summary.js"></script> 
+    <script type="module" defer src="./assets/script/summary.js"></script>
 
     <title>Join - Board</title>
 </head>
@@ -28,11 +28,12 @@
         <div class="popUpMenus"><a class="popUpMenusLink" href="./index.html">Log out</a></div>
     </div>
 
-    <div id="content">        
+    <div id="content">
         <div id="header">
             <div id="board-headline-div">
                 <div id="board-headline">Board</div>
-                <button id="add-task-btn" class="d-none d-block"><img src="./assets/img/board/add.svg" alt="plus"></button>
+                <button id="add-task-btn" class="d-none d-block"><img src="./assets/img/board/add.svg"
+                        alt="plus"></button>
             </div>
             <div id="header-right-side">
                 <label id="inputfield-div">
@@ -42,48 +43,56 @@
                         <div id="border-right"></div>
                     </div>
                 </label>
-<button onclick="showTaskPopup('todo-board')" id="add-task-btn">Add Task
-  <img src="./assets/img/board/add.svg" alt="plus">
-</button>
+                <button onclick="showTaskPopup('todo-board')" id="add-task-btn">Add Task
+                    <img src="./assets/img/board/add.svg" alt="plus">
+                </button>
             </div>
         </div>
         <div id="main-section">
-                <div class="boards" id="todo-board">
-                        <div class="header-boards">
-                          <div class="board-title">To do</div>
-                          <img onclick="showTaskPopup('todo-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                        </div>
-                        <div class="no-task-div">No tasks To Do</div>
-                        <div class="task-container"></div>
-                      </div>
-                      
-                      <div class="boards" id="inprogress-board">
-                        <div class="header-boards">
-                          <div class="board-title">In progress</div>
-                          <img onclick="showTaskPopup('inprogress-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                        </div>
-                        <div class="no-task-div">No tasks To Do</div>
-                        <div class="task-container"></div>
-                      </div>
-                      
-                      <div class="boards" id="awaitfeedback-board">
-                        <div class="header-boards">
-                          <div class="board-title">Await feedback</div>
-                          <img onclick="showTaskPopup('awaitfeedback-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                        </div>
-                        <div class="no-task-div">No tasks To Do</div>
-                        <div class="task-container"><div onclick="showTaskInformation()" id="taskDiv" class="task-div">Hausaufgaben erledigen</div></div>
-                      </div>
-                      
-                      <div class="boards" id="done-board">
-                        <div class="header-boards">
-                          <div class="board-title">Done</div>
-                          <img onclick="showTaskPopup('done-board')" class="plus-icon" src="./assets/img/board/plus_button.svg" alt="plus button">
-                        </div>
-                        <div class="no-task-div">No tasks To Do</div>
-                        <div class="task-container"></div>
-                      </div>
-                      
+            <div class="boards" id="todo-board" ondrop="drop(event, 'todo-board')" ondragover="allowDrop(event)">
+                <div class="header-boards">
+                    <div class="board-title">To do</div>
+                    <img onclick="showTaskPopup('todo-board')" class="plus-icon"
+                        src="./assets/img/board/plus_button.svg" alt="plus button">
+                </div>
+                <div class="no-task-div">No tasks To Do</div>
+                <div class="task-container"></div>
+            </div>
+
+            <div class="boards" id="inprogress-board" ondrop="drop(event, 'inprogress-board')"
+                ondragover="allowDrop(event)">
+                <div class="header-boards">
+                    <div class="board-title">In progress</div>
+                    <img onclick="showTaskPopup('inprogress-board')" class="plus-icon"
+                        src="./assets/img/board/plus_button.svg" alt="plus button">
+                </div>
+                <div class="no-task-div">No tasks To Do</div>
+                <div class="task-container"></div>
+            </div>
+
+            <div class="boards" id="awaitfeedback-board" ondrop="drop(event, 'awaitfeedback-board')"
+                ondragover="allowDrop(event)">
+                <div class="header-boards">
+                    <div class="board-title">Await feedback</div>
+                    <img onclick="showTaskPopup('awaitfeedback-board')" class="plus-icon"
+                        src="./assets/img/board/plus_button.svg" alt="plus button">
+                </div>
+                <div class="no-task-div">No tasks To Do</div>
+                <div class="task-container">
+                    <div onclick="showTaskInformation()" draggable="true" ondragstart="startDragging(id)" id="taskDiv" class="task-div">Hausaufgaben erledigen</div>
+                </div>
+            </div>
+
+            <div class="boards" id="done-board" ondrop="drop(event, 'done-board')" ondragover="allowDrop(event)">
+                <div class="header-boards">
+                    <div class="board-title">Done</div>
+                    <img onclick="showTaskPopup('done-board')" class="plus-icon"
+                        src="./assets/img/board/plus_button.svg" alt="plus button">
+                </div>
+                <div class="no-task-div">No tasks To Do</div>
+                <div class="task-container"></div>
+            </div>
+
         </div>
     </div>
     <div id="addTaskPopup" class="d-none" onclick="closeDetails()">
@@ -100,7 +109,8 @@
                     <textarea rows="4" cols="50" name="description" placeholder="Enter a Description"></textarea>
 
                     <div class="title">Assigned to</div>
-                    <input id="contacts-dropdown" class="input-fields" type="text" placeholder="Select contacts to assign">
+                    <input id="contacts-dropdown" class="input-fields" type="text"
+                        placeholder="Select contacts to assign">
                     <div id="required-div">
                         <div class="red-star">*</div>This field is required
                     </div>
@@ -113,10 +123,12 @@
 
                     <div class="title">Prio</div>
                     <div id="prioritize">
-                        <button id="urgent" class="prio-button" onclick="toggleButtonState('urgent')">Urgent <img class="prio-icons" src="./assets/img/add_task/urgent.svg" alt="urgent"></button>
-                        <button id="medium" class="prio-button" onclick="toggleButtonState('medium')">Medium <img class="prio-icons" src="./assets/img/add_task/medium.svg" alt="medium"></button>
-                        <button id="low" class="prio-button" onclick="toggleButtonState('low')">Low <img class="prio-icons" src="./assets/img/add_task/low.svg" alt="low"></button>
-                        
+                        <button id="urgent" class="prio-button" onclick="toggleButtonState('urgent')">Urgent <img
+                                class="prio-icons" src="./assets/img/add_task/urgent.svg" alt="urgent"></button>
+                        <button id="medium" class="prio-button" onclick="toggleButtonState('medium')">Medium <img
+                                class="prio-icons" src="./assets/img/add_task/medium.svg" alt="medium"></button>
+                        <button id="low" class="prio-button" onclick="toggleButtonState('low')">Low <img
+                                class="prio-icons" src="./assets/img/add_task/low.svg" alt="low"></button>
                     </div>
                     <div class="title">Category</div>
                     <input id="tasks-dropdown" class="input-fields" type="text" placeholder="Select task category">
@@ -128,8 +140,10 @@
                                 <div class="red-star">*</div>This field is required
                             </div>
                             <div id="responsive-clear-create-btns">
-                                <button onclick="clearAllEntries()" id="clear-btn">Clear <img src="./assets/img/add_task/x.svg" alt="delete"></button>
-                                <button onclick="checkAllRequiredFields()" id="create-btn">Create Task <img src="./assets/img/add_task/check.svg" alt="check"></button>
+                                <button onclick="clearAllEntries()" id="clear-btn">Clear <img
+                                        src="./assets/img/add_task/x.svg" alt="delete"></button>
+                                <button onclick="checkAllRequiredFields()" id="create-btn">Create Task <img
+                                        src="./assets/img/add_task/check.svg" alt="check"></button>
                             </div>
                         </div>
                     </div>
@@ -138,4 +152,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -13,13 +13,14 @@
 
         <script defer src="./assets/script/storage.js"></script>
         <script defer src="./assets/script/template.js"></script>
+        <script defer src="./assets/script/board.js"></script>
         <script defer src="./assets/script/script.js"></script>
         <script type="module" defer src="./assets/script/summary.js"></script> 
 
         <title>Join - Summary</title>
 </head>
 
-<body onload="includeHTML()">
+<body onload="includeHTML(); updateToDos();">
         <div w3-include-html="./left-side-template.html"></div>
         <div w3-include-html="./top-head-template.html"></div>
         <div id="popUpMenuDiv" class="d-none">
@@ -39,14 +40,14 @@
                         <div onclick="navigateToBoard()" class="cards-top">
                                 <img class="cards-icons" src="./assets/img/summary/pencil.svg" alt="pencil">
                                 <div class="number-paragraph-div">
-                                        <div class="number-to-do">1</div>
+                                        <div id="todoCounter" class="number-to-do">7</div>
                                         <div class="to-do-paragraph">To-do</div>
                                 </div>
                         </div>
                         <div onclick="navigateToBoard()" class="cards-top">
                                 <img class="cards-icons" src="./assets/img/summary/check.svg" alt="">
                                 <div class="number-paragraph-div">
-                                        <div class="number-to-do">1</div>
+                                        <div id="finishedtodoCounter" class="number-to-do">10</div>
                                         <div class="to-do-paragraph">Done</div>
                                 </div>
                         </div>
@@ -73,17 +74,17 @@
                 </div>
                 <div id="board-bottom">
                         <div onclick="navigateToBoard()" class="cards-bottom">
-                                <div class="number-to-do">5</div>
+                                <div id="taskInAllBoardsCounter" class="number-to-do">5</div>
                                 <div class="to-do-paragraph">Task in </div>
                                 <div class="to-do-paragraph">Board</div>
                         </div>
                         <div onclick="navigateToBoard()" class="cards-bottom">
-                                <div class="number-to-do">2</div>
+                                <div id="inprogressCounter" class="number-to-do">2</div>
                                 <div class="to-do-paragraph">Task in </div>
                                 <div class="to-do-paragraph">Progress</div>
                         </div>
                         <div onclick="navigateToBoard()" class="cards-bottom">
-                                <div class="number-to-do">2</div>
+                                <div id="awaitfeedbackCounter" class="number-to-do">2</div>
                                 <div class="to-do-paragraph">Awaiting </div>
                                 <div class="to-do-paragraph">Feedback</div>
                         </div>
