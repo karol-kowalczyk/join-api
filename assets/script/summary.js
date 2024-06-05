@@ -83,3 +83,7 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 });
+
+function navigateToBoard() {
+  window.location.href = './board.html';
+}

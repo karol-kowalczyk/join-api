@@ -104,3 +104,7 @@ function loadHelpSite() {
 function stopPropagationFunction(event) {
   event.stopPropagation();
 }
+
+function navigateToBoard() {
+  window.location.href = './board.html';
+}
