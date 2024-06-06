@@ -76,7 +76,7 @@ signIn.addEventListener("click", (event) => {
     })
     .catch((error) => {
       const errorCode = error.code;
-      if (errorCode === "auth/invalid-credential") {
+      if (errorCode == "auth/invalid-credential") {
         showMessage("Incorrect Email or Password", "signInMessage");
       } else {
         showMessage(
