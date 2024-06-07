@@ -5,22 +5,27 @@
 
 body {
   background-color: #f6f7f8;
-  overflow: hidden; /* Deaktiviert das Scrollen im Body */
-  height: 100vh; /* Stellt sicher, dass der Body die volle Höhe des Viewports hat */
+  overflow: hidden;
+  /* Deaktiviert das Scrollen im Body */
+  height: 100vh;
+  /* Stellt sicher, dass der Body die volle Höhe des Viewports hat */
 }
 
 #content {
   margin: 2px 200px 0px 208px;
   display: flex;
   justify-content: space-between;
-  height: calc(100vh - 16px); /* Passt die Höhe an, um den Inhalt zu füllen */
+  height: calc(100vh - 16px);
+  /* Passt die Höhe an, um den Inhalt zu füllen */
 }
 
 #contacts {
   width: 500px;
   background-color: #ffffff;
-  overflow-y: auto; /* Ermöglicht das vertikale Scrollen in der Div */
-  height: 100%; /* Stellt sicher, dass die Div die volle Höhe des Elternelements hat */
+  overflow-y: auto;
+  /* Ermöglicht das vertikale Scrollen in der Div */
+  height: 100%;
+  /* Stellt sicher, dass die Div die volle Höhe des Elternelements hat */
 }
 
 #header-contacts {
@@ -28,6 +33,7 @@ body {
   justify-content: space-between;
   gap: 32px;
   padding: 64px 0 32px 64px;
+  height: 180px;
 }
 
 #border-blue {
@@ -146,8 +152,33 @@ body {
   scrollbar-color: #888 #f1f1f1;
 }
 
-#contact-content {
+.contact-information-display {
+  display: flex;
+  align-items: center;
   position: relative;
   right: -100%;
   transition: all 0.7s ease-in-out;
+  height: 60%;
+  width: 100%;
+}
+
+.contact-list-icon-information {
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #29abe2;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-name-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
