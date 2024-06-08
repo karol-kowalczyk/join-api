@@ -1,4 +1,4 @@
 function showContactInformation() {
     let contactInformationDisplay = document.getElementById('contactInformationDisplay');
-    contactInformationDisplay.style.right = '50%';
+    contactInformationDisplay.style.right = '30%';
 }
