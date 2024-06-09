@@ -78,9 +78,10 @@
   padding: 20px 40px 20px 348px;
 }
 
-#right-side {
+#rightSide {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 
@@ -143,7 +144,7 @@
   display: none !important;
 }
 
-#question-mark:hover {
+#questionMark:hover {
   cursor: pointer;
 }
 
@@ -180,6 +181,6 @@ span {
   visibility: visible;
 }
 
-input::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-}
+  input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
