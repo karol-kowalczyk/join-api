@@ -17,7 +17,7 @@
         <script defer src="./assets/script/board.js"></script>
         <script defer src="./assets/script/addTask.js"></script>
         <script defer src="./assets/script/script.js"></script>
-        <script type="module" defer src="./assets/script/summary.js"></script> 
+        <script type="module" defer src="./assets/script/summary.js"></script>
         <title>Join - Add Task</title>
 </head>
 
@@ -35,15 +35,22 @@
                         <div id="signUpMessage" class="message-div"></div>
                         <div class="title">Title <div class="red-star">*</div>
                         </div>
-                        <input id="inputFieldAddTask" class="input-fields required" type="text" placeholder="Enter a title">
+                        <input id="inputFieldAddTask" class="input-fields required" type="text"
+                                placeholder="Enter a title">
 
                         <div class="title">Description</div>
 
                         <textarea rows="4" cols="50" name="description" placeholder="Enter a Description"></textarea>
 
                         <div class="title">Assigned to</div>
-                        <input id="contacts-dropdown" class="input-fields" type="text"
-                                placeholder="Select contacts to assign">
+                        <div id="contactsDropdown" class="input-fields" onclick="openContactDropdownMenu()">
+                                Select contacts to assign <img id="myDropdownZ" class="dropdown-arrow" src="./assets/img/add_task/arrow_dropdown.svg" alt="arrow">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a class="dropdown-link" href="#">Link 1</a>
+                                    <a class="dropdown-link" href="#">Link 2</a>
+                                    <a class="dropdown-link" href="#">Link 3</a>
+                                </div>
+                            </div>
                         <div id="required-div">
                                 <div class="red-star">*</div>This field is required
                         </div>
@@ -56,10 +63,16 @@
 
                         <div class="title">Prio</div>
                         <div id="prioritize">
-                                <button id="urgent" class="prio-button" onclick="toggleButtonState('urgent')">Urgent <img class="prio-icons" src="./assets/img/add_task/urgent.svg" alt="urgent"></button>
-                                <button id="medium" class="prio-button" onclick="toggleButtonState('medium')">Medium <img class="prio-icons" src="./assets/img/add_task/medium.svg" alt="medium"></button>
-                                <button id="low" class="prio-button" onclick="toggleButtonState('low')">Low <img class="prio-icons" src="./assets/img/add_task/low.svg" alt="low"></button>
-                                
+                                <button id="urgent" class="prio-button" onclick="toggleButtonState('urgent')">Urgent
+                                        <img class="prio-icons" src="./assets/img/add_task/urgent.svg"
+                                                alt="urgent"></button>
+                                <button id="medium" class="prio-button" onclick="toggleButtonState('medium')">Medium
+                                        <img class="prio-icons" src="./assets/img/add_task/medium.svg"
+                                                alt="medium"></button>
+                                <button id="low" class="prio-button" onclick="toggleButtonState('low')">Low <img
+                                                class="prio-icons" src="./assets/img/add_task/low.svg"
+                                                alt="low"></button>
+
                         </div>
                         <div class="title">Category</div>
                         <input id="tasks-dropdown" class="input-fields" type="text" placeholder="Select task category">
@@ -71,8 +84,8 @@
                                                 <div class="red-star">*</div>This field is required
                                         </div>
                                         <div id="responsive-clear-create-btns">
-                                                <button onclick="clearAllEntries()" id="clear-btn">Clear <img src="./assets/img/add_task/x.svg"
-                                                                alt="delete"></button>
+                                                <button onclick="clearAllEntries()" id="clear-btn">Clear <img
+                                                                src="./assets/img/add_task/x.svg" alt="delete"></button>
                                                 <button onclick="saveValue()" id="create-btn">Create Task <img
                                                                 src="./assets/img/add_task/check.svg"
                                                                 alt="check"></button>

@@ -72,14 +72,47 @@ textarea::placeholder {
   display: none;
 }
 
-#contacts-dropdown {
+#contactsDropdown {
   margin-bottom: 24px;
+  height: 32px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 8px;
+  padding-left: 16px;
+  color: #d1d1d1;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
-#contacts-dropdown::placeholder {
-  color: black;
-  font-weight: 400;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 350px;
+  border-radius: 10px;
+  padding: 8px;
 }
+
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dropdown-link:hover {
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
 
 #border {
   color: #d1d1d1;
@@ -98,7 +131,6 @@ textarea::placeholder {
   padding-left: 16px;
   font-weight: 400;
   font-size: 20px;
-  cursor: pointer;
 }
 
 #date::placeholder {
@@ -189,8 +221,7 @@ textarea::placeholder {
 
 #addSubtask {
   cursor: pointer;
-  background: url(/join-project-management-tool/assets/img/add_task/add.svg)
-    no-repeat scroll 7px 7px;
+  background: url(/join-project-management-tool/assets/img/add_task/add.svg) no-repeat scroll 7px 7px;
   background-position: clamp(11.25rem, -0.179rem + 57.14vw, 380px);
 }
 
@@ -233,4 +264,13 @@ textarea::placeholder {
 
 .left-side {
   margin-bottom: 40px;
+}
+
+/* Pseudo-Elemente für das Datumseingabefeld */
+#date::-webkit-datetime-edit {
+  cursor: pointer;
+}
+
+#date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
 }
