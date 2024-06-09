@@ -151,6 +151,7 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+    margin-top: 16px;
   }
 
   #login-paragraph {
@@ -216,6 +217,7 @@
   #responsive-sign-up {
     min-height: auto;
     margin-bottom: 64px;
+    margin-top: 16px;
   }
 
   #mid-section {
