@@ -33,9 +33,12 @@
                 display: flex;
                 margin: 0;
                 height: 80px;
-                width: 100%;
-                justify-content: space-evenly;
+                width: auto;
                 flex-direction: row;
+                align-items: center;
+                gap: 0;
+                width: 100%;
+                justify-content: space-around;
         }
 
         #board-icon {
@@ -56,6 +59,7 @@
         .menu-points {
                 display: flex;
                 flex-direction: column;
+                padding-left: 0;
         }
 
         .menu-points:hover {
