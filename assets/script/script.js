@@ -7,6 +7,7 @@
 
 joinLogo = document.getElementById("big-logo");
 
+
 setTimeout(function init() {
   let header = document.getElementById("main-header");
   let midSection = document.getElementById("mid-section");
@@ -34,13 +35,6 @@ setTimeout(function init() {
 function removeJoinClass() {
   joinLogo.classList.remove("big-logo");
   joinLogo.classList.add("big-logo-loaded");
-}
-
-function loadGuestLogin() {
-  window.location = "/join-project-management-tool/summary.html";
-  let initials = document.getElementById("initials");
-
-  initials.innerHTML = "G";
 }
 
 function goBack() {

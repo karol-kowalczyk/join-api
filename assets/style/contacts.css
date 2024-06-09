@@ -6,34 +6,29 @@
 body {
   background-color: #f6f7f8;
   overflow: hidden;
-  /* Deaktiviert das Scrollen im Body */
   height: 100vh;
-  /* Stellt sicher, dass der Body die volle Höhe des Viewports hat */
 }
 
 #content {
   margin: 2px 200px 0px 208px;
-  display: flex;
-  justify-content: space-between;
   height: calc(100vh - 16px);
-  /* Passt die Höhe an, um den Inhalt zu füllen */
 }
 
 #contacts {
   width: 500px;
   background-color: #ffffff;
   overflow-y: auto;
-  /* Ermöglicht das vertikale Scrollen in der Div */
   height: 100%;
-  /* Stellt sicher, dass die Div die volle Höhe des Elternelements hat */
 }
 
 #header-contacts {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  transform: translate(-12%, -50%);
+  top: 20%;
+  left: 50%;
   gap: 32px;
-  padding: 64px 0 32px 64px;
-  height: 180px;
 }
 
 #border-blue {
@@ -51,7 +46,6 @@ body {
 #slogan {
   font-weight: 400;
   font-size: 27px;
-  margin-top: 24px;
 }
 
 #add-contact {

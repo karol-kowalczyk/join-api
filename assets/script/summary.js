@@ -1,6 +1,5 @@
 // summary.js
 
-
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
@@ -38,7 +37,7 @@ function generateInitials(name) {
 // Function to adjust font size based on text length
 function adjustFontSize() {
   const surenameNameDiv = document.getElementById("surename-name");
-  if (surenameNameDiv.innerText.length > 11) {
+  if (surenameNameDiv && surenameNameDiv.innerText.length > 11) {
     surenameNameDiv.style.fontSize = "32px";
   }
 }
@@ -49,7 +48,9 @@ onAuthStateChanged(auth, async (user) => {
   const initialsElement = document.getElementById("initials");
 
   if (localStorage.getItem("guestUser") === "true") {
-    surenameNameDiv.innerText = "Guest User";
+    if (surenameNameDiv) {
+      surenameNameDiv.innerText = "Guest User";
+    }
     if (initialsElement) {
       initialsElement.innerText = "GU"; // Initials for Guest User
     }
@@ -84,4 +85,3 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 });
-

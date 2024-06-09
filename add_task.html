@@ -14,13 +14,14 @@
 
         <script defer src="./assets/script/storage.js"></script>
         <script defer src="./assets/script/template.js"></script>
-        <!-- <script defer src="./assets/script/board.js"></script> -->
+        <script defer src="./assets/script/board.js"></script>
         <script defer src="./assets/script/addTask.js"></script>
+        <script defer src="./assets/script/script.js"></script>
         <script type="module" defer src="./assets/script/summary.js"></script> 
         <title>Join - Add Task</title>
 </head>
 
-<body onload="includeHTML()">
+<body onload="includeHTML(); onAuthStateChanged()">
         <div w3-include-html="./left-side-template.html"></div>
         <div w3-include-html="./top-head-template.html"></div>
         <div id="popUpMenuDiv" class="d-none">
