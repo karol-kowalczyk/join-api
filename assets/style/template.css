@@ -69,7 +69,7 @@
   color: black !important;
 }
 
-#top-header {
+#topHeader {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@
   display: none;
 }
 
-#little-logo {
+#littleLogo {
   display: none;
 }
 
