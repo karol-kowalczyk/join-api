@@ -97,7 +97,7 @@ textarea::placeholder {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  width: 350px;
+  width: 380px;
   border-radius: 10px;
   padding: 8px;
 }
@@ -106,6 +106,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 42px;
 }
 
 .dropdown-link:hover {

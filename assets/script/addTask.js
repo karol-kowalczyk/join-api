@@ -129,3 +129,33 @@ window.onclick = function(event) {
     }
   }
 }
+
+function populateContactsDropdown(contacts) {
+  const dropdown = document.getElementById("myDropdown");
+  dropdown.innerHTML = ''; // Clear existing options
+
+  contacts.forEach(contact => {
+    const contactLink = document.createElement("a");
+    contactLink.className = "dropdown-link";
+    contactLink.href = "#";
+    contactLink.textContent = contact.name;
+    dropdown.appendChild(contactLink);
+  });
+}
+
+
+const contacts = [
+  { name: "Arnold Bernd", email: "A.Bernd@Gmail.de" },
+  { name: "Alex Meier", email: "A.Meier@Gmx.de" },
+  { name: "Boris Igen", email: "B.Igel@yahoo.de" },
+
+];
+
+populateContactsDropdown(contacts);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  populateContactsDropdown(contacts); 
+});
+
