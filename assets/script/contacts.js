@@ -1,3 +1,4 @@
+let toggleCounter = 0;
 
 async function fetchContacts() {
   try {
@@ -13,6 +14,12 @@ async function fetchContacts() {
 document.addEventListener('DOMContentLoaded', fetchContacts);
 
 
-function addNewContact() {
-
+function showContactInformation() {
+  let contactInformationDisplay = document.getElementById('contactInformationDisplay');
+  if (toggleCounter % 2 == 0) {
+    contactInformationDisplay.style.right = '0%';
+  } else {
+    contactInformationDisplay.style.right = '-100%';
+  }
+  toggleCounter++;
 }
