@@ -26,9 +26,8 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  transform: translate(-12%, -50%);
   top: 20%;
-  left: 50%;
+  left: 45%;
   gap: 32px;
 }
 
@@ -151,11 +150,20 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  right: -100%;
+  right: -6%;
   transition: all 0.7s ease-in-out;
   height: 60%;
   width: 100%;
   gap: 16px;
+}
+
+.contact-information-edit-div {
+  display: flex;
+  gap: 8px;
+}
+
+.pencil {
+  cursor: pointer;
 }
 
 .contact-list-icon-information {

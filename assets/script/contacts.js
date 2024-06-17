@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', fetchContacts);
 function showContactInformation() {
   let contactInformationDisplay = document.getElementById('contactInformationDisplay');
   if (toggleCounter % 2 == 0) {
-    contactInformationDisplay.style.right = '0%';
+    contactInformationDisplay.style.right = '-6%';
   } else {
     contactInformationDisplay.style.right = '-100%';
   }
