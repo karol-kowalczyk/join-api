@@ -10,7 +10,7 @@ body {
 }
 
 #content {
-  margin: 2px 200px 0px 208px;
+  margin: 2px 32px 0 200px;
   height: calc(100vh - 16px);
 }
 
