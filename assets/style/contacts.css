@@ -146,6 +146,11 @@ body {
   scrollbar-color: #888 #f1f1f1;
 }
 
+.edit-div {
+  display: flex;
+  gap: 8px;
+}
+
 .contact-information-display {
   display: flex;
   align-items: center;
@@ -159,7 +164,7 @@ body {
 
 .contact-information-edit-div {
   display: flex;
-  gap: 8px;
+  gap: 32px;
 }
 
 .pencil {
@@ -183,10 +188,13 @@ body {
 .contact-name-information {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 .contact-list-item-name-information {
   font-size: 47px;
+}
+
+.font-weight-bold {
+  font-weight: 700;
 }
